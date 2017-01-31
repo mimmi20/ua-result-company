@@ -23,7 +23,7 @@ class CompanyLoaderTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        $adapter      = new Local(__DIR__ . '/../../cache/');
+        $adapter      = new Local(__DIR__ . '/../cache/');
         $cache        = new FilesystemCachePool(new Filesystem($adapter));
         $this->object = new CompanyLoader($cache);
     }
