@@ -96,25 +96,11 @@ class CompanyLoader implements LoaderInterface
 
         $company = $cacheItem->get();
 
-        if (isset($company->type)) {
-            $type = $company->type;
-        } else {
-            $type = 'unknown';
-        }
-
-        if (isset($company->name)) {
-            $name = $company->name;
-        } else {
-            $name = 'unknown';
-        }
-
-        if (isset($company->brandname)) {
-            $brandname = $company->brandname;
-        } else {
-            $brandname = 'unknown';
-        }
-
-        return new Company($type, $name, $brandname);
+        return new Company(
+            $company->type,
+            $company->name,
+            $company->brandname
+        );
     }
 
     /**
