@@ -89,7 +89,7 @@ class Company implements CompanyInterface
      */
     public function getName()
     {
-        return (string) $this->name;
+        return $this->name;
     }
 
     /**
