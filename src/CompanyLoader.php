@@ -84,6 +84,42 @@ class CompanyLoader implements LoaderInterface
     }
 
     /**
+     * @param string $name
+     *
+     * @return \UaResult\Company\Company
+     */
+    public function loadByName($name)
+    {
+        foreach ($this->getCompanies() as $key => $data) {
+            if ($name !== $data->name) {
+                continue;
+            }
+
+            return $this->load($key);
+        }
+
+        return $this->load('Unknown');
+    }
+
+    /**
+     * @param string $name
+     *
+     * @return \UaResult\Company\Company
+     */
+    public function loadByBrandName($name)
+    {
+        foreach ($this->getCompanies() as $key => $data) {
+            if ($name !== $data->brandname) {
+                continue;
+            }
+
+            return $this->load($key);
+        }
+
+        return $this->load('Unknown');
+    }
+
+    /**
      * initializes cache
      */
     private function init()
