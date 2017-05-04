@@ -19,7 +19,7 @@ use UaResult\Company\CompanyLoader;
 /**
  * Test class for \BrowserDetector\Loader\CompanyLoader
  */
-class CompanyLoaderTest extends \PHPUnit_Framework_TestCase
+class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \UaResult\Company\CompanyLoader
@@ -170,12 +170,11 @@ class CompanyLoaderTest extends \PHPUnit_Framework_TestCase
         ];
     }
 
-    /**
-     * @expectedException \BrowserDetector\Loader\NotFoundException
-     * @expectedExceptionMessage the company with key "does not exist" was not found
-     */
     public function testLoadNotAvailable()
     {
+        $this->expectException('\BrowserDetector\Loader\NotFoundException');
+        $this->expectExceptionMessage('the company with key "does not exist" was not found');
+
         $this->object->load('does not exist', 'test-ua');
     }
 }

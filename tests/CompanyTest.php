@@ -13,7 +13,7 @@ namespace UaResultTest\Company;
 
 use UaResult\Company\Company;
 
-class CompanyTest extends \PHPUnit_Framework_TestCase
+class CompanyTest extends \PHPUnit\Framework\TestCase
 {
     public function testSetterGetter()
     {
