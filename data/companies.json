@@ -4453,5 +4453,10 @@
     "type": "CIDE Interactive",
     "name": "CIDE Interactive",
     "brandname": "CIDE Interactive"
+  },
+  "Idea": {
+    "type": "Idea",
+    "name": "Idea",
+    "brandname": "Idea"
   }
 }

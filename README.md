@@ -1,2 +1,2 @@
-# ua-browser-type
-Classes for different browser types
+# ua-result-company
+Classes for different companies
