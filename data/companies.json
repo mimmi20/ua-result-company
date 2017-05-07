@@ -4458,5 +4458,40 @@
     "type": "Idea",
     "name": "Idea",
     "brandname": "Idea"
+  },
+  "Bouygues Telecom": {
+    "type": "Bouygues Telecom",
+    "name": "Bouygues Telecom S.A.",
+    "brandname": "Bouygues Telecom"
+  },
+  "Jonathan Bennett": {
+    "type": "Jonathan Bennett",
+    "name": "Jonathan Bennett",
+    "brandname": "Jonathan Bennett"
+  },
+  "Lifeware": {
+    "type": "Lifeware",
+    "name": "Lifeware",
+    "brandname": "Lifeware"
+  },
+  "UFA": {
+    "type": "UFA",
+    "name": "UFA, Inc.",
+    "brandname": "UFA"
+  },
+  "E-Boda": {
+    "type": "E-Boda",
+    "name": "E-Boda Distribution SRL.",
+    "brandname": "E-Boda"
+  },
+  "Yulong Computer": {
+    "type": "Yulong Computer",
+    "name": "Yulong Computer",
+    "brandname": "Yulong"
+  },
+  "General Mobile": {
+    "type": "General Mobile",
+    "name": "General Mobile",
+    "brandname": "General Mobile"
   }
 }
