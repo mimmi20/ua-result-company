@@ -1109,6 +1109,11 @@
     "name": "Gigabyte",
     "brandname": "Gigabyte"
   },
+  "Gigaset": {
+    "type": "Gigaset",
+    "name": "Gigaset Communications GmbH",
+    "brandname": "Gigaset"
+  },
   "Gionee": {
     "type": "Gionee",
     "name": "Gionee",
@@ -4493,5 +4498,35 @@
     "type": "General Mobile",
     "name": "General Mobile",
     "brandname": "General Mobile"
+  },
+  "Leagoo": {
+    "type": "Leagoo",
+    "name": "LEAGOO International Co., Limited",
+    "brandname": "LEAGOO"
+  },
+  "Allview": {
+    "type": "Allview",
+    "name": "Allview Electronics SP. Z O.O.",
+    "brandname": "Allview"
+  },
+  "Starmobile": {
+    "type": "Starmobile",
+    "name": "Starmobile PH",
+    "brandname": "Starmobile"
+  },
+  "SFR": {
+    "type": "SFR",
+    "name": "SOCIETE FRANCAISE DU RADIOTELEPHONE",
+    "brandname": "SFR"
+  },
+  "G Net": {
+    "type": "G Net",
+    "name": "G Net International (Thailand) Co Ltd",
+    "brandname": "G Net"
+  },
+  "Turbo-X": {
+    "type": "Turbo-X",
+    "name": "Turbo-X",
+    "brandname": "Turbo-X"
   }
 }
