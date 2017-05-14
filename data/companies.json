@@ -4513,5 +4513,15 @@
     "type": "Starmobile",
     "name": "Starmobile PH",
     "brandname": "Starmobile"
+  },
+  "SFR": {
+    "type": "SFR",
+    "name": "SOCIETE FRANCAISE DU RADIOTELEPHONE",
+    "brandname": "SFR"
+  },
+  "G Net": {
+    "type": "G Net",
+    "name": "G Net International (Thailand) Co Ltd",
+    "brandname": "G Net"
   }
 }
