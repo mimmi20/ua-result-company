@@ -3701,7 +3701,7 @@
   },
   "Tecno": {
     "type": "Tecno",
-    "name": "Tecno",
+    "name": "Tecno Mobile",
     "brandname": "Tecno"
   },
   "Alps": {
@@ -3744,10 +3744,10 @@
     "name": "Lovme",
     "brandname": "Lovme"
   },
-  "Smartfren Andromax": {
-    "type": "Smartfren Andromax",
-    "name": "Smartfren Andromax",
-    "brandname": "Smartfren Andromax"
+  "Smartfren": {
+    "type": "Smartfren",
+    "name": "PT Smartfren Telecom, Tbk",
+    "brandname": "Smartfren"
   },
   "Lark": {
     "type": "Lark",
@@ -4528,5 +4528,70 @@
     "type": "Turbo-X",
     "name": "Turbo-X",
     "brandname": "Turbo-X"
+  },
+  "Smartisan": {
+    "type": "Smartisan",
+    "name": "Smartisan Technology Co., Ltd",
+    "brandname": "Smartisan"
+  },
+  "Turkcell": {
+    "type": "Turkcell",
+    "name": "Turkcell Iletisim Hizmetleri A.S.",
+    "brandname": "Turkcell"
+  },
+  "Mediacom": {
+    "type": "Mediacom",
+    "name": "Mediacom",
+    "brandname": "Mediacom"
+  },
+  "Maxtron": {
+    "type": "Maxtron",
+    "name": "Maxtron",
+    "brandname": "Maxtron"
+  },
+  "MLS": {
+    "type": "MLS",
+    "name": "MLS Multimedia SA",
+    "brandname": "MLS"
+  },
+  "Ulefone": {
+    "type": "Ulefone",
+    "name": "Ulefone Technology Co., Ltd.",
+    "brandname": "Ulefone"
+  },
+  "Lyf": {
+    "type": "Lyf",
+    "name": "Reliance Retail Ltd.",
+    "brandname": "LYF"
+  },
+  "SOP": {
+    "type": "SOP",
+    "name": "SOP",
+    "brandname": "SOP"
+  },
+  "Vsun": {
+    "type": "Vsun",
+    "name": "Shenzhen Vsun Communication Technology Co., Ltd",
+    "brandname": "Vsun"
+  },
+  "Advan": {
+    "type": "Advan",
+    "name": "Advan Digital",
+    "brandname": "Advan"
+  },
+  "IPRO": {
+    "type": "IPRO",
+    "name": "Shenzhen Zhike Communication Co., Ltd",
+    "brandname": "IPRO"
+  },
+  "DL": {
+    "type": "DL",
+    "name": "DL",
+    "brandname": "DL"
+  },
+  "Vonino": {
+    "type": "Vonino",
+    "name": "Vonino Inc.",
+    "brandname": "Vonino"
   }
 }
