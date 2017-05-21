@@ -3701,7 +3701,7 @@
   },
   "Tecno": {
     "type": "Tecno",
-    "name": "Tecno",
+    "name": "Tecno Mobile",
     "brandname": "Tecno"
   },
   "Alps": {
@@ -4528,5 +4528,40 @@
     "type": "Turbo-X",
     "name": "Turbo-X",
     "brandname": "Turbo-X"
+  },
+  "Smartisan": {
+    "type": "Smartisan",
+    "name": "Smartisan Technology Co., Ltd",
+    "brandname": "Smartisan"
+  },
+  "Turkcell": {
+    "type": "Turkcell",
+    "name": "Turkcell Iletisim Hizmetleri A.S.",
+    "brandname": "Turkcell"
+  },
+  "Mediacom": {
+    "type": "Mediacom",
+    "name": "Mediacom",
+    "brandname": "Mediacom"
+  },
+  "Maxtron": {
+    "type": "Maxtron",
+    "name": "Maxtron",
+    "brandname": "Maxtron"
+  },
+  "MLS": {
+    "type": "MLS",
+    "name": "MLS Multimedia SA",
+    "brandname": "MLS"
+  },
+  "Ulefone": {
+    "type": "Ulefone",
+    "name": "Ulefone Technology Co., Ltd.",
+    "brandname": "Ulefone"
+  },
+  "Lyf": {
+    "type": "Lyf",
+    "name": "Reliance Retail Ltd.",
+    "brandname": "LYF"
   }
 }
