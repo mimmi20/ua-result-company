@@ -4583,5 +4583,15 @@
     "type": "IPRO",
     "name": "Shenzhen Zhike Communication Co., Ltd",
     "brandname": "IPRO"
+  },
+  "DL": {
+    "type": "DL",
+    "name": "DL",
+    "brandname": "DL"
+  },
+  "Vonino": {
+    "type": "Vonino",
+    "name": "Vonino Inc.",
+    "brandname": "Vonino"
   }
 }
