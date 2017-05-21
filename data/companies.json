@@ -3744,10 +3744,10 @@
     "name": "Lovme",
     "brandname": "Lovme"
   },
-  "Smartfren Andromax": {
-    "type": "Smartfren Andromax",
-    "name": "Smartfren Andromax",
-    "brandname": "Smartfren Andromax"
+  "Smartfren": {
+    "type": "Smartfren",
+    "name": "PT Smartfren Telecom, Tbk",
+    "brandname": "Smartfren"
   },
   "Lark": {
     "type": "Lark",
@@ -4563,5 +4563,25 @@
     "type": "Lyf",
     "name": "Reliance Retail Ltd.",
     "brandname": "LYF"
+  },
+  "SOP": {
+    "type": "SOP",
+    "name": "SOP",
+    "brandname": "SOP"
+  },
+  "Vsun": {
+    "type": "Vsun",
+    "name": "Shenzhen Vsun Communication Technology Co., Ltd",
+    "brandname": "Vsun"
+  },
+  "Advan": {
+    "type": "Advan",
+    "name": "Advan Digital",
+    "brandname": "Advan"
+  },
+  "IPRO": {
+    "type": "IPRO",
+    "name": "Shenzhen Zhike Communication Co., Ltd",
+    "brandname": "IPRO"
   }
 }
