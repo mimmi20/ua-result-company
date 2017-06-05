@@ -3896,8 +3896,8 @@
   },
   "Smartbook": {
     "type": "Smartbook",
-    "name": "Smartbook",
-    "brandname": "Smartbook"
+    "name": "smartbook AG",
+    "brandname": "smartbook"
   },
   "BB-Mobile": {
     "type": "BB-Mobile",
@@ -4593,5 +4593,75 @@
     "type": "Vonino",
     "name": "Vonino Inc.",
     "brandname": "Vonino"
+  },
+  "Bitdefender": {
+    "type": "Bitdefender",
+    "name": "Bitdefender",
+    "brandname": "Bitdefender"
+  },
+  "CROSSCALL": {
+    "type": "CROSSCALL",
+    "name": "CROSSCALL",
+    "brandname": "CROSSCALL"
+  },
+  "Accelerated Technology": {
+    "type": "Accelerated Technology",
+    "name": "Accelerated Technology",
+    "brandname": "Accelerated Technology"
+  },
+  "Sohu": {
+    "type": "Sohu",
+    "name": "Sohu.com Inc",
+    "brandname": "Sohu"
+  },
+  "MTN": {
+    "type": "MTN",
+    "name": "Mobile Telephone Networks Group",
+    "brandname": "MTN"
+  },
+  "TP-LINK": {
+    "type": "TP-LINK",
+    "name": "TP-Link Technologies Co., Ltd.",
+    "brandname": "TP-Link"
+  },
+  "evc": {
+    "type": "evc",
+    "name": "eVenture Capital Partners II, LLC",
+    "brandname": "evc"
+  },
+  "varocarbas": {
+    "type": "varocarbas",
+    "name": "Alvaro Carballo Garcia",
+    "brandname": "Alvaro Carballo Garcia"
+  },
+  "DigitalPebble": {
+    "type": "DigitalPebble",
+    "name": "DigitalPebble Ltd",
+    "brandname": "DigitalPebble"
+  },
+  "WPO Foundation": {
+    "type": "WPO Foundation",
+    "name": "WPO Foundation",
+    "brandname": "WPO Foundation"
+  },
+  "HOMTOM": {
+    "type": "HOMTOM",
+    "name": "HOMTOM",
+    "brandname": "HOMTOM"
+  },
+  "Firefly Mobile": {
+    "type": "Firefly Mobile",
+    "name": "Firefly Mobile",
+    "brandname": "Firefly"
+  },
+  "myPhone": {
+    "type": "myPhone",
+    "name": "myPhone",
+    "brandname": "myPhone"
+  },
+  "Vernee": {
+    "type": "Vernee",
+    "name": "Vernee",
+    "brandname": "Vernee"
   }
 }
