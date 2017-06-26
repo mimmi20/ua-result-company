@@ -3916,8 +3916,8 @@
   },
   "Itel": {
     "type": "Itel",
-    "name": "Itel",
-    "brandname": "Itel"
+    "name": "www.itel-mobile.com",
+    "brandname": "itel"
   },
   "Hans Hasselberg": {
     "type": "Hans Hasselberg",
@@ -4663,5 +4663,35 @@
     "type": "Vernee",
     "name": "Vernee",
     "brandname": "Vernee"
+  },
+  "Excelvan": {
+    "type": "Excelvan",
+    "name": "Excelvan International, Inc.",
+    "brandname": "Excelvan"
+  },
+  "LeEco": {
+    "type": "LeEco",
+    "name": "Leshi Internet Information & Technology",
+    "brandname": "LeEco"
+  },
+  "Gateway": {
+    "type": "Gateway",
+    "name": "Gateway, Inc.",
+    "brandname": "Gateway"
+  },
+  "Compaq": {
+    "type": "Compaq",
+    "name": "Compaq Computer Corporation",
+    "brandname": "Compaq"
+  },
+  "xido": {
+    "type": "xido",
+    "name": "ElectronicFox GmbH",
+    "brandname": "XIDO"
+  },
+  "Snap": {
+    "type": "Snap",
+    "name": "Snap Inc.",
+    "brandname": "Snap"
   }
 }
