@@ -4693,5 +4693,70 @@
     "type": "Snap",
     "name": "Snap Inc.",
     "brandname": "Snap"
+  },
+  "Phoenix Studio": {
+    "type": "Phoenix Studio",
+    "name": "Phoenix Studio",
+    "brandname": "Phoenix Studio"
+  },
+  "Wolder Electronics": {
+    "type": "Wolder Electronics",
+    "name": "Wolder Electronics",
+    "brandname": "Wolder"
+  },
+  "NINETEC": {
+    "type": "NINETEC",
+    "name": "NINETEC GmbH",
+    "brandname": "NINETEC"
+  },
+  "MPIE": {
+    "type": "MPIE",
+    "name": "Shenzhen Hengyuan Dingye Science and Technology Development Co. Ltd",
+    "brandname": "MPIE"
+  },
+  "Magnus Telecom": {
+    "type": "Magnus Telecom",
+    "name": "Magnus Telecom",
+    "brandname": "Magnus"
+  },
+  "UHAPPY": {
+    "type": "UHAPPY",
+    "name": "Shenzhen ideal Pioneer Trading Co., Ltd.",
+    "brandname": "UHAPPY"
+  },
+  "ACME": {
+    "type": "ACME",
+    "name": "ACME Grupe",
+    "brandname": "ACME"
+  },
+  "Lanix": {
+    "type": "Lanix",
+    "name": "Lanix Mobile",
+    "brandname": "Lanix"
+  },
+  "Aloha Mobile": {
+    "type": "Aloha Mobile",
+    "name": "Aloha Mobile Ltd.",
+    "brandname": "Aloha"
+  },
+  "Wileyfox": {
+    "type": "Wileyfox",
+    "name": "Wileyfox",
+    "brandname": "Wileyfox"
+  },
+  "Bqeel": {
+    "type": "Bqeel",
+    "name": "Bqeel",
+    "brandname": "Bqeel"
+  },
+  "NineSky": {
+    "type": "NineSky",
+    "name": "Ninesky Technology And Industrial Private Limited",
+    "brandname": "NineSky"
+  },
+  "Alibaba": {
+    "type": "Alibaba",
+    "name": "Alibaba Group Holding Limited",
+    "brandname": "Alibaba"
   }
 }
