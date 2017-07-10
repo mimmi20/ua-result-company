@@ -4758,5 +4758,75 @@
     "type": "Alibaba",
     "name": "Alibaba Group Holding Limited",
     "brandname": "Alibaba"
+  },
+  "4Good": {
+    "type": "4Good",
+    "name": "4Good",
+    "brandname": "4Good"
+  },
+  "AgileBits": {
+    "type": "AgileBits",
+    "name": "AgileBits, Inc.",
+    "brandname": "AgileBits"
+  },
+  "8pecxstudios": {
+    "type": "8pecxstudios",
+    "name": "8pecxstudios",
+    "brandname": "8pecxstudios"
+  },
+  "Doro": {
+    "type": "Doro",
+    "name": "Doro AB",
+    "brandname": "Doro"
+  },
+  "Artizlee": {
+    "type": "Artizlee",
+    "name": "Artizlee",
+    "brandname": "Artizlee"
+  },
+  "FUJIFILM Medical Systems": {
+    "type": "FUJIFILM Medical Systems",
+    "name": "FUJIFILM Medical Systems U.S.A., Inc.",
+    "brandname": "FUJIFILM Medical Systems"
+  },
+  "NVIDIA": {
+    "type": "NVIDIA",
+    "name": "NVIDIA CORPORATION",
+    "brandname": "NVIDIA"
+  },
+  "Cyrus": {
+    "type": "Cyrus",
+    "name": "Cyrus Technology GmbH",
+    "brandname": "Cyrus"
+  },
+  "eSTAR": {
+    "type": "eSTAR",
+    "name": "eSTAR",
+    "brandname": "eSTAR"
+  },
+  "Changhong": {
+    "type": "Changhong",
+    "name": "Sichuan Changhong Electric Co., Ltd.",
+    "brandname": "Changhong"
+  },
+  "Blackview": {
+    "type": "Blackview",
+    "name": "Blackview International Group",
+    "brandname": "Blackview"
+  },
+  "Oukitel": {
+    "type": "Oukitel",
+    "name": "Shenzhen Yunji Intelligent Technology Co,.Ltd.",
+    "brandname": "Oukitel"
+  },
+  "Yuntab": {
+    "type": "Yuntab",
+    "name": "Shenzhen Wave Multimedia Co., Ltd.",
+    "brandname": "Yuntab"
+  },
+  "Quick Heal": {
+    "type": "Quick Heal",
+    "name": "Quick Heal Technologies Ltd.",
+    "brandname": "Quick Heal"
   }
 }
