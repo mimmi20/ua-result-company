@@ -486,8 +486,8 @@
   },
   "CatSound": {
     "type": "CatSound",
-    "name": "Cat Sound",
-    "brandname": "CatSound"
+    "name": "S4 Handelsgruppe GmbH",
+    "brandname": "Cat"
   },
   "Cce": {
     "type": "Cce",
@@ -4828,5 +4828,65 @@
     "type": "Quick Heal",
     "name": "Quick Heal Technologies Ltd.",
     "brandname": "Quick Heal"
+  },
+  "Basecamp": {
+    "type": "Basecamp",
+    "name": "Basecamp",
+    "brandname": "Basecamp"
+  },
+  "Chuwi": {
+    "type": "Chuwi",
+    "name": "CHUWI Inc",
+    "brandname": "Chuwi"
+  },
+  "Wortmann": {
+    "type": "Wortmann",
+    "name": "Wortmann AG",
+    "brandname": "Wortmann"
+  },
+  "ZUK Mobile": {
+    "type": "ZUK Mobile",
+    "name": "ZUK Mobile Technology Inc.",
+    "brandname": "ZUK"
+  },
+  "Timmy": {
+    "type": "Timmy",
+    "name": "Timmy",
+    "brandname": "Timmy"
+  },
+  "TheQ": {
+    "type": "TheQ",
+    "name": "TheQ",
+    "brandname": "TheQ"
+  },
+  "Colorfly": {
+    "type": "Colorfly",
+    "name": "Colorfly",
+    "brandname": "Colorfly"
+  },
+  "eightloops": {
+    "type": "eightloops",
+    "name": "eightloops GmbH",
+    "brandname": "eightloops"
+  },
+  "AdaptiveBee": {
+    "type": "AdaptiveBee",
+    "name": "AdaptiveBee SASU",
+    "brandname": "AdaptiveBee"
+  },
+  "Komu": {
+    "type": "Komu",
+    "name": "Komu",
+    "brandname": "Komu"
+  },
+  "Landvo": {
+    "type": "Landvo",
+    "name": "Landvo",
+    "brandname": "Landvo"
+  },
+  "Xgody": {
+    "type": "Xgody",
+    "name": "Xgody",
+    "brandname": "Xgody"
   }
 }
