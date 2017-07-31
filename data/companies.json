@@ -191,7 +191,7 @@
   },
   "Archos": {
     "type": "Archos",
-    "name": "Archos",
+    "name": "Archos S.A.",
     "brandname": "Archos"
   },
   "Ark": {
@@ -4888,5 +4888,35 @@
     "type": "Xgody",
     "name": "Xgody",
     "brandname": "Xgody"
+  },
+  "Tianji": {
+    "type": "Tianji",
+    "name": "Tianji",
+    "brandname": "Tianji"
+  },
+  "Ctroniq": {
+    "type": "Ctroniq",
+    "name": "Ctroniq Ltd",
+    "brandname": "Ctroniq"
+  },
+  "Torch": {
+    "type": "Torch",
+    "name": "Torch Mobile",
+    "brandname": "Torch"
+  },
+  "Voto": {
+    "type": "Voto",
+    "name": "Voto Mobile",
+    "brandname": "Voto"
+  },
+  "Eplutus": {
+    "type": "Eplutus",
+    "name": "Richmond International (Hong Kong) Electronic Technology Development Co.,Ltd",
+    "brandname": "Eplutus"
+  },
+  "Tesco": {
+    "type": "Tesco",
+    "name": "Tesco plc",
+    "brandname": "Tesco"
   }
 }
