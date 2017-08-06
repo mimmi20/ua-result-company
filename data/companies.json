@@ -4918,5 +4918,45 @@
     "type": "Tesco",
     "name": "Tesco plc",
     "brandname": "Tesco"
+  },
+  "FNF": {
+    "type": "FNF",
+    "name": "FNF",
+    "brandname": "FNF"
+  },
+  "Sumvier": {
+    "type": "Sumvier",
+    "name": "Shenzhen Sumvier Technology Co., Ltd.",
+    "brandname": "Sumvier"
+  },
+  "Navon": {
+    "type": "Navon",
+    "name": "Navon",
+    "brandname": "Navon"
+  },
+  "Dragon Touch": {
+    "type": "Dragon Touch",
+    "name": "Dragon Touch",
+    "brandname": "Dragon Touch"
+  },
+  "Trevi": {
+    "type": "Trevi",
+    "name": "TREVI S.p.a.",
+    "brandname": "Trevi"
+  },
+  "Ramos": {
+    "type": "Ramos",
+    "name": "Ramos",
+    "brandname": "Ramos"
+  },
+  "Alldaymall": {
+    "type": "Alldaymall",
+    "name": "Alldaymall",
+    "brandname": "Alldaymall"
+  },
+  "Yones Toptech": {
+    "type": "Yones Toptech",
+    "name": "Yones Toptech (China) Co. Ltd",
+    "brandname": "Yones Toptech"
   }
 }
