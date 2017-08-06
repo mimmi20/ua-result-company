@@ -4958,5 +4958,10 @@
     "type": "Yones Toptech",
     "name": "Yones Toptech (China) Co. Ltd",
     "brandname": "Yones Toptech"
+  },
+  "Tomtec": {
+    "type": "Tomtec",
+    "name": "Tomtec",
+    "brandname": "Tomtec"
   }
 }
