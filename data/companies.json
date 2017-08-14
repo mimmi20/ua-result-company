@@ -4963,5 +4963,55 @@
     "type": "Tomtec",
     "name": "Tomtec",
     "brandname": "Tomtec"
+  },
+  "Beneve": {
+    "type": "Beneve",
+    "name": "Beneve",
+    "brandname": "Beneve"
+  },
+  "MPMan": {
+    "type": "MPMan",
+    "name": "MPMan",
+    "brandname": "MPMan"
+  },
+  "Inno-Hit": {
+    "type": "Inno-Hit",
+    "name": "Inno-Hit",
+    "brandname": "Inno-Hit"
+  },
+  "Ippo": {
+    "type": "Ippo",
+    "name": "Ippo",
+    "brandname": "Ippo"
+  },
+  "Woxter": {
+    "type": "Woxter",
+    "name": "Woxter",
+    "brandname": "Woxter"
+  },
+  "Scrapinghub": {
+    "type": "Scrapinghub",
+    "name": "Scraping Hub Limited",
+    "brandname": "Scrapinghub"
+  },
+  "Gloomar": {
+    "type": "Gloomar",
+    "name": "Gloomar CZ a.s.",
+    "brandname": "Gloomar"
+  },
+  "Fengxiang": {
+    "type": "Fengxiang",
+    "name": "Fengxiang",
+    "brandname": "Fengxiang"
+  },
+  "Webin": {
+    "type": "Webin",
+    "name": "Webin",
+    "brandname": "Webin"
+  },
+  "PPTV": {
+    "type": "PPTV",
+    "name": "PPTV",
+    "brandname": "PPTV"
   }
 }
