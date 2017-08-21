@@ -3761,7 +3761,7 @@
   },
   "Captiva": {
     "type": "Captiva",
-    "name": "Captiva",
+    "name": "CAPTIVA GmbH",
     "brandname": "Captiva"
   },
   "PolyPad": {
@@ -5013,5 +5013,110 @@
     "type": "PPTV",
     "name": "PPTV",
     "brandname": "PPTV"
+  },
+  "Zen": {
+    "type": "Zen",
+    "name": "Zen Mobile",
+    "brandname": "Zen"
+  },
+  "360": {
+    "type": "360",
+    "name": "360",
+    "brandname": "360"
+  },
+  "Teclast": {
+    "type": "Teclast",
+    "name": "Teclast",
+    "brandname": "Teclast"
+  },
+  "Freetel": {
+    "type": "Freetel",
+    "name": "Freetel",
+    "brandname": "Freetel"
+  },
+  "Telekom": {
+    "type": "Telekom",
+    "name": "Deutsche Telekom AG",
+    "brandname": "Telekom"
+  },
+  "Insignia": {
+    "type": "Insignia",
+    "name": "Insignia",
+    "brandname": "Insignia"
+  },
+  "Just5": {
+    "type": "Just5",
+    "name": "Just5",
+    "brandname": "Just5"
+  },
+  "XING": {
+    "type": "XING",
+    "name": "XING AG",
+    "brandname": "XING"
+  },
+  "MythTV": {
+    "type": "MythTV",
+    "name": "MythTV",
+    "brandname": "MythTV"
+  },
+  "YLMF": {
+    "type": "YLMF",
+    "name": "YLMF Computer Technology Co., Ltd.",
+    "brandname": "YLMF"
+  },
+  "Metz": {
+    "type": "Metz",
+    "name": "Metz",
+    "brandname": "Metz"
+  },
+  "Jide": {
+    "type": "Jide",
+    "name": "Jide Technology",
+    "brandname": "Jide"
+  },
+  "Telestar": {
+    "type": "Telestar",
+    "name": "Telestar",
+    "brandname": "Telestar"
+  },
+  "ASTON": {
+    "type": "ASTON",
+    "name": "ASTON est une S.A.S",
+    "brandname": "ASTON"
+  },
+  "MSTAR": {
+    "type": "MSTAR",
+    "name": "MSTAR",
+    "brandname": "MSTAR"
+  },
+  "Arcelik": {
+    "type": "Arcelik",
+    "name": "Arcelik A.S.",
+    "brandname": "Arcelik"
+  },
+  "Tagi": {
+    "type": "Tagi",
+    "name": "Tagi",
+    "brandname": "Tagi"
+  },
+  "Bluboo": {
+    "type": "Bluboo",
+    "name": "Bluboo",
+    "brandname": "Bluboo"
+  },
+  "Evolveo": {
+    "type": "Evolveo",
+    "name": "Abacus Electric, s.r.o.",
+    "brandname": "Evolveo"
+  },
+  "Avvio": {
+    "type": "Avvio",
+    "name": "Avvio",
+    "brandname": "Avvio"
+  },
+  "Shift": {
+    "type": "Shift",
+    "name": "SHIFT GmbH",
+    "brandname": "Shift"
   }
 }
