@@ -24,19 +24,19 @@ interface CompanyInterface
      *
      * @return string
      */
-    public function getType();
+    public function getType(): string;
 
     /**
      * Returns the name of the company
      *
-     * @return string
+     * @return string|null
      */
-    public function getName();
+    public function getName(): ?string;
 
     /**
      * Returns the brand name of the company
      *
      * @return string|null
      */
-    public function getBrandName();
+    public function getBrandName(): ?string;
 }
