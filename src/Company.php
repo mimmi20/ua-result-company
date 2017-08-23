@@ -42,10 +42,10 @@ class Company implements CompanyInterface
 
     /**
      * @param string      $type
-     * @param string      $name
+     * @param string|null $name
      * @param string|null $brandname
      */
-    public function __construct($type, $name, $brandname = null)
+    public function __construct(string $type, ?string $name = null, ?string $brandname = null)
     {
         $this->type      = $type;
         $this->name      = $name;
@@ -57,7 +57,7 @@ class Company implements CompanyInterface
      *
      * @return string
      */
-    public function getType()
+    public function getType(): string
     {
         return $this->type;
     }
@@ -65,9 +65,9 @@ class Company implements CompanyInterface
     /**
      * Returns the name of the company
      *
-     * @return string
+     * @return string|null
      */
-    public function getName()
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -77,7 +77,7 @@ class Company implements CompanyInterface
      *
      * @return string|null
      */
-    public function getBrandName()
+    public function getBrandName(): ?string
     {
         return $this->brandname;
     }

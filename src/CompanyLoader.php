@@ -42,15 +42,15 @@ class CompanyLoader implements LoaderInterface
     /**
      * detects if the company is available
      *
-     * @param string $companyKey
+     * @param string $key
      *
      * @return bool
      */
-    public function has($companyKey)
+    public function has(string $key): bool
     {
         $this->init();
 
-        $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $companyKey));
+        $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
 
         return $cacheItem->isHit();
     }
@@ -58,21 +58,21 @@ class CompanyLoader implements LoaderInterface
     /**
      * Gets the information about the company
      *
-     * @param string $companyKey
+     * @param string $key
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      *
-     * @return \UaResult\Company\Company
+     * @return \UaResult\Company\CompanyInterface
      */
-    public function load($companyKey)
+    public function load(string $key): CompanyInterface
     {
         $this->init();
 
-        if (!$this->has($companyKey)) {
-            throw new NotFoundException('the company with key "' . $companyKey . '" was not found');
+        if (!$this->has($key)) {
+            throw new NotFoundException('the company with key "' . $key . '" was not found');
         }
 
-        $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $companyKey));
+        $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
 
         $company = $cacheItem->get();
 
@@ -86,9 +86,9 @@ class CompanyLoader implements LoaderInterface
     /**
      * @param string $name
      *
-     * @return \UaResult\Company\Company
+     * @return \UaResult\Company\CompanyInterface
      */
-    public function loadByName($name)
+    public function loadByName(string $name): CompanyInterface
     {
         foreach ($this->getCompanies() as $key => $data) {
             if ($name !== $data->name) {
@@ -104,9 +104,9 @@ class CompanyLoader implements LoaderInterface
     /**
      * @param string $name
      *
-     * @return \UaResult\Company\Company
+     * @return \UaResult\Company\CompanyInterface
      */
-    public function loadByBrandName($name)
+    public function loadByBrandName(string $name): CompanyInterface
     {
         foreach ($this->getCompanies() as $key => $data) {
             if ($name !== $data->brandname) {
@@ -122,14 +122,14 @@ class CompanyLoader implements LoaderInterface
     /**
      * initializes cache
      */
-    private function init()
+    private function init(): void
     {
         $cacheInitializedId = hash('sha512', 'company-cache is initialized');
         $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
 
         if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            foreach ($this->getCompanies() as $companyKey => $companyData) {
-                $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $companyKey));
+            foreach ($this->getCompanies() as $key => $companyData) {
+                $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
                 $cacheItem->set($companyData);
 
                 $this->cache->save($cacheItem);
@@ -143,7 +143,7 @@ class CompanyLoader implements LoaderInterface
     /**
      * @return array[]
      */
-    private function getCompanies()
+    private function getCompanies(): \Generator
     {
         static $companies = null;
 
