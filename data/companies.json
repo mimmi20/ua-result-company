@@ -5118,5 +5118,15 @@
     "type": "Shift",
     "name": "SHIFT GmbH",
     "brandname": "Shift"
+  },
+  "JoinVision": {
+    "type": "JoinVision",
+    "name": "JoinVision",
+    "brandname": "JoinVision"
+  },
+  "CENTIL-Schweiz": {
+    "type": "CENTIL-Schweiz",
+    "name": "CENTIL-Schweiz",
+    "brandname": "CENTIL"
   }
 }
