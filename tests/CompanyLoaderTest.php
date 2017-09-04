@@ -172,6 +172,6 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
         $this->expectException('\BrowserDetector\Loader\NotFoundException');
         $this->expectExceptionMessage('the company with key "does not exist" was not found');
 
-        $this->object->load('does not exist', 'test-ua');
+        $this->object->load('does not exist');
     }
 }

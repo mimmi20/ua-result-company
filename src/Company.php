@@ -22,21 +22,21 @@ class Company implements CompanyInterface
     /**
      * the type name of the device
      *
-     * @var string|null
+     * @var string
      */
     private $type = null;
 
     /**
      * the name of the company
      *
-     * @var string
+     * @var string|null
      */
     private $name = null;
 
     /**
      * the brand name of the company
      *
-     * @var string
+     * @var string|null
      */
     private $brandname = null;
 

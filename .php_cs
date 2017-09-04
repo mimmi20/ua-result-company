@@ -18,7 +18,7 @@ $finder = PhpCsFixer\Finder::create()
 
 return PhpCsFixer\Config::create()
     ->setRiskyAllowed(true)
-    ->setRules(array(
+    ->setRules([
         '@PSR2' => true,
         '@Symfony' => true,
         '@Symfony:risky' => true,
@@ -105,10 +105,11 @@ return PhpCsFixer\Config::create()
         'php_unit_strict' => false,
         'phpdoc_add_missing_param_annotation' => true,
         'phpdoc_align' => true,
+        'phpdoc_annotation_without_dot' => false,
         'phpdoc_inline_tag' => true,
         'phpdoc_no_access' => true,
         'phpdoc_no_alias_tag' => ['property-read' => 'property', 'property-write' => 'property', 'type' => 'var'],
-        'phpdoc_no_empty_return' => true,
+        'phpdoc_no_empty_return' => false,
         'phpdoc_no_package' => true,
         'phpdoc_no_useless_inheritdoc' => true,
         'phpdoc_order' => true,
@@ -127,12 +128,12 @@ return PhpCsFixer\Config::create()
         'psr0' => true,
         'psr4' => true,
         'random_api_migration' => true,
-        'return_type_declaration' => true,
+        'return_type_declaration' => ['space_before' => 'none'],
         'self_accessor' => true,
         'semicolon_after_instruction' => true,
         'short_scalar_cast' => true,
         'silenced_deprecation_error' => true,
-        'simplified_null_return' => true,
+        'simplified_null_return' => false,
         'single_blank_line_at_eof' => true,
         'single_blank_line_before_namespace' => false,
         'single_class_element_per_statement' => true,
@@ -149,9 +150,9 @@ return PhpCsFixer\Config::create()
         'ternary_to_null_coalescing' => false,
         'trailing_comma_in_multiline_array' => true,
         'trim_array_spaces' => true,
-        'unary_operator_spaces' => true,
+        'unary_operator_spaces' => false,
         'visibility_required' => true,
         'whitespace_after_comma_in_array' => true,
-    ))
+    ])
     ->setFinder($finder)
 ;

@@ -27,7 +27,7 @@ use Psr\Cache\CacheItemPoolInterface;
 class CompanyLoader implements LoaderInterface
 {
     /**
-     * @var \Psr\Cache\CacheItemPoolInterface|null
+     * @var \Psr\Cache\CacheItemPoolInterface
      */
     private $cache = null;
 
