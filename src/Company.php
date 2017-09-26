@@ -24,21 +24,21 @@ class Company implements CompanyInterface
      *
      * @var string
      */
-    private $type = null;
+    private $type;
 
     /**
      * the name of the company
      *
      * @var string|null
      */
-    private $name = null;
+    private $name;
 
     /**
      * the brand name of the company
      *
      * @var string|null
      */
-    private $brandname = null;
+    private $brandname;
 
     /**
      * @param string      $type

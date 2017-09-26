@@ -15,7 +15,7 @@ use UaResult\Company\Company;
 
 class CompanyTest extends \PHPUnit\Framework\TestCase
 {
-    public function testSetterGetter()
+    public function testSetterGetter(): void
     {
         $type      = 'CompanyType';
         $name      = 'TestCompany';
