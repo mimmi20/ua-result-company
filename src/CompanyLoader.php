@@ -29,7 +29,7 @@ class CompanyLoader implements LoaderInterface
     /**
      * @var \Psr\Cache\CacheItemPoolInterface
      */
-    private $cache = null;
+    private $cache;
 
     /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache

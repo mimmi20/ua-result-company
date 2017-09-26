@@ -22,13 +22,13 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
     /**
      * @var \UaResult\Company\CompanyLoader
      */
-    private $object = null;
+    private $object;
 
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../cache/');
         $this->object = new CompanyLoader($cache);
@@ -41,7 +41,7 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
      * @param string $companyName
      * @param string $brand
      */
-    public function testLoadAvailable($companyKey, $companyName, $brand)
+    public function testLoadAvailable($companyKey, $companyName, $brand): void
     {
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $this->object->load($companyKey);
@@ -82,7 +82,7 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
      * @param string $companyName
      * @param string $brand
      */
-    public function testLoadByName($nameToSearch, $companyName, $brand)
+    public function testLoadByName($nameToSearch, $companyName, $brand): void
     {
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $this->object->loadByName($nameToSearch);
@@ -128,7 +128,7 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
      * @param string $companyName
      * @param string $brand
      */
-    public function testLoadByBrandName($brandnameToSearch, $companyName, $brand)
+    public function testLoadByBrandName($brandnameToSearch, $companyName, $brand): void
     {
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $this->object->loadByBrandName($brandnameToSearch);
@@ -167,7 +167,7 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
         ];
     }
 
-    public function testLoadNotAvailable()
+    public function testLoadNotAvailable(): void
     {
         $this->expectException('\BrowserDetector\Loader\NotFoundException');
         $this->expectExceptionMessage('the company with key "does not exist" was not found');
