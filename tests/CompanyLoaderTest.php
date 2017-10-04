@@ -27,6 +27,8 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @return void
      */
     protected function setUp(): void
     {
@@ -40,8 +42,10 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
      * @param string $companyKey
      * @param string $companyName
      * @param string $brand
+     *
+     * @return void
      */
-    public function testLoadAvailable($companyKey, $companyName, $brand): void
+    public function testLoadAvailable(string $companyKey, string $companyName, string $brand): void
     {
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $this->object->load($companyKey);
@@ -78,11 +82,13 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider providerLoadByName
      *
-     * @param string $nameToSearch
-     * @param string $companyName
-     * @param string $brand
+     * @param string      $nameToSearch
+     * @param string|null $companyName
+     * @param string|null $brand
+     *
+     * @return void
      */
-    public function testLoadByName($nameToSearch, $companyName, $brand): void
+    public function testLoadByName(string $nameToSearch, ?string $companyName, ?string $brand): void
     {
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $this->object->loadByName($nameToSearch);
@@ -124,11 +130,13 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider providerLoadByBrandName
      *
-     * @param string $brandnameToSearch
-     * @param string $companyName
-     * @param string $brand
+     * @param string      $brandnameToSearch
+     * @param string|null $companyName
+     * @param string|null $brand
+     *
+     * @return void
      */
-    public function testLoadByBrandName($brandnameToSearch, $companyName, $brand): void
+    public function testLoadByBrandName(string $brandnameToSearch, ?string $companyName, ?string $brand): void
     {
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $this->object->loadByBrandName($brandnameToSearch);
@@ -167,6 +175,9 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
         ];
     }
 
+    /**
+     * @return void
+     */
     public function testLoadNotAvailable(): void
     {
         $this->expectException('\BrowserDetector\Loader\NotFoundException');

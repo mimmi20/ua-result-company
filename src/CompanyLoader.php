@@ -121,6 +121,8 @@ class CompanyLoader implements LoaderInterface
 
     /**
      * initializes cache
+     *
+     * @return void
      */
     private function init(): void
     {
