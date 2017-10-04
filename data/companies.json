@@ -5128,5 +5128,25 @@
     "type": "CENTIL-Schweiz",
     "name": "CENTIL-Schweiz",
     "brandname": "CENTIL"
+  },
+  "Jlinksz": {
+    "type": "Jlinksz",
+    "name": "Jlinksz",
+    "brandname": "Jlinksz"
+  },
+  "Crypto": {
+    "type": "Crypto",
+    "name": "Crypto SA",
+    "brandname": "Crypto"
+  },
+  "NuVision": {
+    "type": "NuVision",
+    "name": "NuVision",
+    "brandname": "NuVision"
+  },
+  "uCoz": {
+    "type": "uCoz",
+    "name": "uCoz Media LLC",
+    "brandname": "uCoz"
   }
 }
