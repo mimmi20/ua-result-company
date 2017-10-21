@@ -33,7 +33,18 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../cache/');
-        $this->object = new CompanyLoader($cache);
+        $this->object = CompanyLoader::getInstance($cache);
+    }
+
+    /**
+     * Tears down the fixture, for example, close a network connection.
+     * This method is called after a test is executed.
+     *
+     * @return void
+     */
+    protected function tearDown(): void
+    {
+        CompanyLoader::resetInstance();
     }
 
     /**
