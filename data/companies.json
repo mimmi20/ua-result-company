@@ -5158,5 +5158,15 @@
     "type": "Kodak",
     "name": "Kodak",
     "brandname": "Kodak"
+  },
+  "Mlais": {
+    "type": "Mlais",
+    "name": "Mlais",
+    "brandname": "Mlais"
+  },
+  "BDF": {
+    "type": "BDF",
+    "name": "BDF",
+    "brandname": "BDF"
   }
 }
