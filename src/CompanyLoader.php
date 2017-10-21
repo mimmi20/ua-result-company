@@ -32,11 +32,38 @@ class CompanyLoader implements LoaderInterface
     private $cache;
 
     /**
+     * @var self|null
+     */
+    private static $instance;
+
+    /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
      */
-    public function __construct(CacheItemPoolInterface $cache)
+    private function __construct(CacheItemPoolInterface $cache)
     {
         $this->cache = $cache;
+    }
+
+    /**
+     * @param \Psr\Cache\CacheItemPoolInterface $cache
+     *
+     * @return self
+     */
+    public static function getInstance(CacheItemPoolInterface $cache)
+    {
+        if (null === self::$instance) {
+            self::$instance = new self($cache);
+        }
+
+        return self::$instance;
+    }
+
+    /**
+     * @return void
+     */
+    public static function resetInstance(): void
+    {
+        self::$instance = null;
     }
 
     /**
