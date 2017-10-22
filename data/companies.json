@@ -1174,11 +1174,6 @@
     "name": "G-Tide",
     "brandname": "G-Tide"
   },
-  "Gzone": {
-    "type": "Gzone",
-    "name": "GzOne",
-    "brandname": "GzOne"
-  },
   "GooPhone": {
     "type": "GooPhone",
     "name": "GooPhone",
@@ -5168,5 +5163,10 @@
     "type": "BDF",
     "name": "BDF",
     "brandname": "BDF"
+  },
+  "Casio": {
+    "type": "Casio",
+    "name": "NEC CASIO Mobile Communications",
+    "brandname": "CASIO"
   }
 }
