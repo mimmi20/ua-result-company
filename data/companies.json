@@ -1531,7 +1531,7 @@
   },
   "KeenHigh": {
     "type": "KeenHigh",
-    "name": "Keen High",
+    "name": "Keen High Technologies, Ltd.",
     "brandname": "Keen High"
   },
   "Keneksi": {
@@ -5168,5 +5168,10 @@
     "type": "Casio",
     "name": "NEC CASIO Mobile Communications",
     "brandname": "CASIO"
+  },
+  "Disney Mobile": {
+    "type": "Disney Mobile",
+    "name": "Disney Mobile",
+    "brandname": "Disney Mobile"
   }
 }
