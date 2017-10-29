@@ -14,6 +14,7 @@ namespace UaResult\Company;
 use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use Psr\Cache\CacheItemPoolInterface;
+use Seld\JsonLint\JsonParser;
 
 /**
  * Browser detection class
@@ -170,15 +171,17 @@ class CompanyLoader implements LoaderInterface
     }
 
     /**
+     * @throws \Seld\JsonLint\ParsingException
+     *
      * @return array[]
      */
     private function getCompanies(): \Generator
     {
-        static $companies = null;
-
-        if (null === $companies) {
-            $companies = json_decode(file_get_contents(__DIR__ . '/../data/companies.json'));
-        }
+        $jsonParser = new JsonParser();
+        $companies  = $jsonParser->parse(
+            file_get_contents(__DIR__ . '/../data/companies.json'),
+            JsonParser::DETECT_KEY_CONFLICTS
+        );
 
         foreach ($companies as $key => $data) {
             yield $key => $data;
