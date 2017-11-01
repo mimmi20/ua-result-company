@@ -5173,5 +5173,10 @@
     "type": "Disney Mobile",
     "name": "Disney Mobile",
     "brandname": "Disney Mobile"
+  },
+  "MHorse": {
+    "type": "MHorse",
+    "name": "M-HORSE",
+    "brandname": "M-HORSE"
   }
 }
