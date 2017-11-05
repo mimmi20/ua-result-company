@@ -28,6 +28,7 @@ before_install:
 
 install:
   - travis_retry composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --no-dev $COMPOSER_FLAGS -vv
+  - travis_retry composer require --update-with-dependencies --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest --dev $COMPOSER_FLAGS -vv symfony/cache
 
 script:
   - composer validate
