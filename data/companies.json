@@ -5193,5 +5193,15 @@
     "type": "Weebly",
     "name": "Weebly, Inc.",
     "brandname": "Weebly"
+  },
+  "Pinterest": {
+    "type": "Pinterest",
+    "name": "Pinterest Inc.",
+    "brandname": "Pinterest"
+  },
+  "Gihyun Jung": {
+    "type": "Gihyun Jung",
+    "name": "Gihyun Jung",
+    "brandname": "Gihyun Jung"
   }
 }
