@@ -114,37 +114,45 @@ class CompanyLoader implements LoaderInterface
     /**
      * @param string $name
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     *
      * @return \UaResult\Company\CompanyInterface
      */
     public function loadByName(string $name): CompanyInterface
     {
-        foreach ($this->getCompanies() as $key => $data) {
-            if ($name !== $data->name) {
+        $this->init();
+
+        foreach ($this->getCompanies() as $key => $companyData) {
+            if ($name !== $companyData->name) {
                 continue;
             }
 
             return $this->load($key);
         }
 
-        return $this->load('Unknown');
+        throw new NotFoundException('the company with name "' . $name . '" was not found');
     }
 
     /**
      * @param string $name
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     *
      * @return \UaResult\Company\CompanyInterface
      */
     public function loadByBrandName(string $name): CompanyInterface
     {
-        foreach ($this->getCompanies() as $key => $data) {
-            if ($name !== $data->brandname) {
+        $this->init();
+
+        foreach ($this->getCompanies() as $key => $companyData) {
+            if ($name !== $companyData->brandname) {
                 continue;
             }
 
             return $this->load($key);
         }
 
-        return $this->load('Unknown');
+        throw new NotFoundException('the company with brand name "' . $name . '" was not found');
     }
 
     /**
@@ -158,8 +166,25 @@ class CompanyLoader implements LoaderInterface
         $cacheInitialized   = $this->cache->getItem($cacheInitializedId);
 
         if (!$cacheInitialized->isHit() || !$cacheInitialized->get()) {
-            foreach ($this->getCompanies() as $key => $companyData) {
+            $jsonParser = new JsonParser();
+            $companies  = $jsonParser->parse(
+                file_get_contents(__DIR__ . '/../data/companies.json'),
+                JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
+            );
+
+            $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache'));
+            $cacheItem->set(array_keys($companies));
+
+            $this->cache->save($cacheItem);
+
+            foreach ($companies as $key => $data) {
                 $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
+
+                $companyData = new \stdClass();
+                $companyData->type = $key;
+                $companyData->name = $data['name'];
+                $companyData->brandname = $data['brandname'];
+
                 $cacheItem->set($companyData);
 
                 $this->cache->save($cacheItem);
@@ -173,18 +198,22 @@ class CompanyLoader implements LoaderInterface
     /**
      * @throws \Seld\JsonLint\ParsingException
      *
-     * @return array[]
+     * @return array[]|\Generator
      */
     private function getCompanies(): \Generator
     {
-        $jsonParser = new JsonParser();
-        $companies  = $jsonParser->parse(
-            file_get_contents(__DIR__ . '/../data/companies.json'),
-            JsonParser::DETECT_KEY_CONFLICTS
-        );
+        $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache'));
 
-        foreach ($companies as $key => $data) {
-            yield $key => $data;
+        if (!$cacheItem->isHit() || !$cacheItem->get()) {
+            return;
+        }
+
+        $companies = $cacheItem->get();
+
+        foreach ($companies as $key) {
+            $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
+
+            yield $key => $cacheItem->get();
         }
     }
 }

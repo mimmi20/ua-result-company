@@ -181,8 +181,8 @@
   },
   "ArchiveOrg": {
     "type": "ArchiveOrg",
-    "name": "archive.org",
-    "brandname": "archive.org"
+    "name": "The Internet Archive",
+    "brandname": "The Internet Archive"
   },
   "ArchiveTeam": {
     "type": "ArchiveTeam",
@@ -476,7 +476,7 @@
   },
   "Careerx": {
     "type": "Careerx",
-    "name": "career-x.de",
+    "name": "career-x GmbH",
     "brandname": "career-x.de"
   },
   "Caterpillar": {
@@ -561,8 +561,8 @@
   },
   "CocCocCompany": {
     "type": "CocCocCompany",
-    "name": "Coc Coc Company Limited",
-    "brandname": "Coc Coc"
+    "name": "Cốc Cốc Company Limited",
+    "brandname": "Cốc Cốc"
   },
   "Comag": {
     "type": "Comag",
@@ -661,8 +661,8 @@
   },
   "DassaultSystemes": {
     "type": "DassaultSystemes",
-    "name": "Dassault Systemes",
-    "brandname": "Dassault Systemes"
+    "name": "Dassault Systèmes",
+    "brandname": "Dassault Systèmes"
   },
   "Datasift": {
     "type": "Datasift",
@@ -746,8 +746,8 @@
   },
   "DiscoveryEngine": {
     "type": "DiscoveryEngine",
-    "name": "discoveryengine.com",
-    "brandname": "discoveryengine.com"
+    "name": "Discovery Engine",
+    "brandname": "Discovery Engine"
   },
   "Dlink": {
     "type": "Dlink",
@@ -806,7 +806,7 @@
   },
   "Easou": {
     "type": "Easou",
-    "name": "easou.com",
+    "name": "easou ICP",
     "brandname": "easou"
   },
   "Easypix": {
@@ -1151,7 +1151,7 @@
   },
   "Google": {
     "type": "Google",
-    "name": "Google Inc",
+    "name": "Google Inc.",
     "brandname": "Google"
   },
   "GoSquared": {
@@ -1286,7 +1286,7 @@
   },
   "Idee": {
     "type": "Idee",
-    "name": "Idee Inc.",
+    "name": "Idée Inc.",
     "brandname": "Idee"
   },
   "IisNet": {
@@ -2551,8 +2551,8 @@
   },
   "Reddit": {
     "type": "Reddit",
-    "name": "Reddit Inc.",
-    "brandname": "Reddit"
+    "name": "reddit inc.",
+    "brandname": "reddit"
   },
   "Redhat": {
     "type": "Redhat",
@@ -2806,12 +2806,12 @@
   },
   "Slack": {
     "type": "Slack",
-    "name": "slack.com",
+    "name": "Slack Technologies",
     "brandname": "slack"
   },
   "Slackware": {
     "type": "Slackware",
-    "name": "Slackware Linux Inc",
+    "name": "Slackware Linux, Inc.",
     "brandname": "Slackware"
   },
   "Softbank": {
@@ -3031,7 +3031,7 @@
   },
   "Tencent": {
     "type": "Tencent",
-    "name": "Tencent Ltd.",
+    "name": "Tencent Holdings Ltd.",
     "brandname": "Tencent"
   },
   "Tesla": {
@@ -3378,11 +3378,6 @@
     "type": "WaterfoxProject",
     "name": "www.waterfoxproject.org",
     "brandname": "www.waterfoxproject.org"
-  },
-  "WaybackArchiveOrg": {
-    "type": "WaybackArchiveOrg",
-    "name": "waybackarchive.org",
-    "brandname": "waybackarchive"
   },
   "Webceo": {
     "type": "Webceo",
@@ -4606,7 +4601,7 @@
   },
   "Sohu": {
     "type": "Sohu",
-    "name": "Sohu.com Inc",
+    "name": "Sohu.com Inc.",
     "brandname": "Sohu"
   },
   "MTN": {
@@ -5208,5 +5203,315 @@
     "type": "4G Systems",
     "name": "4G Systems GmbH & Co. KG",
     "brandname": "4G Systems"
+  },
+  "Acoon": {
+    "type": "Acoon",
+    "name": "Acoon GmbH",
+    "brandname": "Acoon"
+  },
+  "Clearspring": {
+    "type": "Clearspring",
+    "name": "Clearspring Technologies, Inc.",
+    "brandname": "Clearspring"
+  },
+  "Amorank": {
+    "type": "Amorank",
+    "name": "Amorank",
+    "brandname": "Amorank"
+  },
+  "AnalyticsSEO": {
+    "type": "AnalyticsSEO",
+    "name": "Analytics SEO",
+    "brandname": "Analytics SEO"
+  },
+  "LAW": {
+    "type": "LAW",
+    "name": "The Laboratory for Web Algorithmics (LAW)",
+    "brandname": "LAW"
+  },
+  "Mediagreen": {
+    "type": "Mediagreen",
+    "name": "Mediagreen Medienservice",
+    "brandname": "Mediagreen"
+  },
+  "2.0Promotion": {
+    "type": "2.0Promotion",
+    "name": "2.0Promotion GbR",
+    "brandname": "2.0Promotion"
+  },
+  "Bitly": {
+    "type": "Bitly",
+    "name": "Bitly, Inc.",
+    "brandname": "Bitly"
+  },
+  "Blogtrottr": {
+    "type": "Blogtrottr",
+    "name": "Blogtrottr Ltd",
+    "brandname": "Blogtrottr"
+  },
+  "Bountii": {
+    "type": "Bountii",
+    "name": "Bountii Inc.",
+    "brandname": "Bountii"
+  },
+  "Supertop": {
+    "type": "Supertop",
+    "name": "Supertop",
+    "brandname": "Supertop"
+  },
+  "Datadog": {
+    "type": "Datadog",
+    "name": "Datadog",
+    "brandname": "Datadog"
+  },
+  "Dataprovider": {
+    "type": "Dataprovider",
+    "name": "Dataprovider B.V.",
+    "brandname": "Dataprovider"
+  },
+  "DAZOO.FR": {
+    "type": "DAZOO.FR",
+    "name": "DAZOO.FR",
+    "brandname": "DAZOO.FR"
+  },
+  "Domain Re-Animator": {
+    "type": "Domain Re-Animator",
+    "name": "Domain Re-Animator, LLC",
+    "brandname": "Domain Re-Animator"
+  },
+  "JaydeOnline": {
+    "type": "JaydeOnline",
+    "name": "Jayde Online, Inc.",
+    "brandname": "Jayde Online"
+  },
+  "DavidSmith": {
+    "type": "DavidSmith",
+    "name": "David Smith & Developing Perspective, LLC",
+    "brandname": "David Smith & Developing Perspective"
+  },
+  "MattWells": {
+    "type": "MattWells",
+    "name": "Matt Wells",
+    "brandname": "Matt Wells"
+  },
+  "towards": {
+    "type": "towards",
+    "name": "towards GmbH",
+    "brandname": "towards"
+  },
+  "Heureka": {
+    "type": "Heureka",
+    "name": "Heureka.cz, a.s.",
+    "brandname": "Heureka"
+  },
+  "LetsEncrypt": {
+    "type": "LetsEncrypt",
+    "name": "Let's Encrypt",
+    "brandname": "Let's Encrypt"
+  },
+  "MetaJob": {
+    "type": "MetaJob",
+    "name": "MetaJob",
+    "brandname": "MetaJob"
+  },
+  "Lavtech": {
+    "type": "Lavtech",
+    "name": "Lavtech.Com Corp.",
+    "brandname": "Lavtech.Com"
+  },
+  "MonitorUs": {
+    "type": "MonitorUs",
+    "name": "Monitor.Us",
+    "brandname": "Monitor.Us"
+  },
+  "Munin": {
+    "type": "Munin",
+    "name": "Munin",
+    "brandname": "Munin"
+  },
+  "JaroslavKubos": {
+    "type": "JaroslavKubos",
+    "name": "Jaroslav Kuboš",
+    "brandname": "Jaroslav Kuboš"
+  },
+  "Nmap": {
+    "type": "Nmap",
+    "name": "Nmap",
+    "brandname": "Nmap"
+  },
+  "Omgili": {
+    "type": "Omgili",
+    "name": "Omgili",
+    "brandname": "Omgili"
+  },
+  "OpenWebSpider": {
+    "type": "OpenWebSpider",
+    "name": "OpenWebSpider Lab",
+    "brandname": "OpenWebSpider"
+  },
+  "Openindex": {
+    "type": "Openindex",
+    "name": "Openindex B.V.",
+    "brandname": "Openindex"
+  },
+  "Outbrain": {
+    "type": "Outbrain",
+    "name": "Outbrain",
+    "brandname": "Outbrain"
+  },
+  "PHP Server Monitor": {
+    "type": "PHP Server Monitor",
+    "name": "PHP Server Monitor",
+    "brandname": "PHP Server Monitor"
+  },
+  "Smallrivers": {
+    "type": "Smallrivers",
+    "name": "Smallrivers SA",
+    "brandname": "Smallrivers"
+  },
+  "Pingdom": {
+    "type": "Pingdom",
+    "name": "Pingdom AB",
+    "brandname": "Pingdom"
+  },
+  "Pocket": {
+    "type": "Pocket",
+    "name": "Pocket",
+    "brandname": "Pocket"
+  },
+  "Bitlove": {
+    "type": "Bitlove",
+    "name": "Bitlove",
+    "brandname": "Bitlove"
+  },
+  "QueryEye": {
+    "type": "QueryEye",
+    "name": "QueryEye Inc.",
+    "brandname": "QueryEye"
+  },
+  "Roihunter": {
+    "type": "Roihunter",
+    "name": "Roihunter a.s.",
+    "brandname": "Roihunter"
+  },
+  "SEO Engine": {
+    "type": "SEO Engine",
+    "name": "SEO Engine",
+    "brandname": "SEO Engine"
+  },
+  "SEOkicks": {
+    "type": "SEOkicks",
+    "name": "SEOkicks",
+    "brandname": "SEOkicks"
+  },
+  "SSL Labs": {
+    "type": "SSL Labs",
+    "name": "SSL Labs",
+    "brandname": "SSL Labs"
+  },
+  "SafeDNS": {
+    "type": "SafeDNS",
+    "name": "SafeDNS, Inc.",
+    "brandname": "SafeDNS"
+  },
+  "Screaming Frog": {
+    "type": "Screaming Frog",
+    "name": "Screaming Frog Ltd",
+    "brandname": "Screaming Frog"
+  },
+  "Sensika": {
+    "type": "Sensika",
+    "name": "Sensika",
+    "brandname": "Sensika"
+  },
+  "Visual Meta": {
+    "type": "Visual Meta",
+    "name": "Visual Meta",
+    "brandname": "Visual Meta"
+  },
+  "ShopWiki": {
+    "type": "ShopWiki",
+    "name": "ShopWiki Corp.",
+    "brandname": "ShopWiki"
+  },
+  "Site24x7": {
+    "type": "Site24x7",
+    "name": "Site24x7",
+    "brandname": "Site24x7"
+  },
+  "Manuel Kasper": {
+    "type": "Manuel Kasper",
+    "name": "Manuel Kasper",
+    "brandname": "Manuel Kasper"
+  },
+  "Skype": {
+    "type": "Skype",
+    "name": "Skype Communications S.à.r.l.",
+    "brandname": "Skype"
+  },
+  "Domain Tools": {
+    "type": "Domain Tools",
+    "name": "Domain Tools",
+    "brandname": "Domain Tools"
+  },
+  "Venafi TrustNet": {
+    "type": "Venafi TrustNet",
+    "name": "Venafi TrustNet",
+    "brandname": "Venafi TrustNet"
+  },
+  "Talkwalker": {
+    "type": "Talkwalker",
+    "name": "Talkwalker Inc.",
+    "brandname": "Talkwalker"
+  },
+  "TweetedTimes": {
+    "type": "TweetedTimes",
+    "name": "TweetedTimes",
+    "brandname": "TweetedTimes"
+  },
+  "Mediasift": {
+    "type": "Mediasift",
+    "name": "Mediasift",
+    "brandname": "Mediasift"
+  },
+  "Kurt McKee": {
+    "type": "Kurt McKee",
+    "name": "Kurt McKee",
+    "brandname": "Kurt McKee"
+  },
+  "Uptime Robot": {
+    "type": "Uptime Robot",
+    "name": "Uptime Robot",
+    "brandname": "Uptime Robot"
+  },
+  "Uptime": {
+    "type": "Uptime",
+    "name": "Uptime",
+    "brandname": "Uptime"
+  },
+  "Alentum Software": {
+    "type": "Alentum Software",
+    "name": "Alentum Software Ltd.",
+    "brandname": "Alentum Software"
+  },
+  "AliasIO": {
+    "type": "AliasIO",
+    "name": "AliasIO",
+    "brandname": "AliasIO"
+  },
+  "WebSitePulse": {
+    "type": "WebSitePulse",
+    "name": "WebSitePulse",
+    "brandname": "WebSitePulse"
+  },
+  "Steve Webb": {
+    "type": "Steve Webb",
+    "name": "Steve Webb",
+    "brandname": "Steve Webb"
+  },
+  "YaCy": {
+    "type": "YaCy",
+    "name": "YaCy",
+    "brandname": "YaCy"
   }
 }
