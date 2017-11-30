@@ -5513,5 +5513,10 @@
     "type": "YaCy",
     "name": "YaCy",
     "brandname": "YaCy"
+  },
+  "Naver": {
+    "type": "Naver",
+    "name": "Naver",
+    "brandname": "Naver"
   }
 }
