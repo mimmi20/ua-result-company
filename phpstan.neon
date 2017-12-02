@@ -4,5 +4,5 @@ parameters:
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php
   excludes_analyse:
     - */tests/*/data/*
-  ignoreErrors:
-    - '~Psr\\Log\\LoggerInterface::error\(\) expects string~'
+#  ignoreErrors:
+#    - '~Psr\\Log\\LoggerInterface::error\(\) expects string~'
