@@ -126,14 +126,9 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
-                'Google Inc',
-                'Google Inc',
+                'Google Inc.',
+                'Google Inc.',
                 'Google',
-            ],
-            [
-                'This company does not exist',
-                null,
-                null,
             ],
         ];
     }
@@ -175,13 +170,8 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'Google',
-                'Google Inc',
+                'Google Inc.',
                 'Google',
-            ],
-            [
-                'This company does not exist',
-                null,
-                null,
             ],
         ];
     }
@@ -195,5 +185,27 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
         $this->expectExceptionMessage('the company with key "does not exist" was not found');
 
         $this->object->load('does not exist');
+    }
+
+    /**
+     * @return void
+     */
+    public function testLoadByBrandNameNotAvailable(): void
+    {
+        $this->expectException('\BrowserDetector\Loader\NotFoundException');
+        $this->expectExceptionMessage('the company with brand name "This company does not exist" was not found');
+
+        $this->object->loadByBrandName('This company does not exist');
+    }
+
+    /**
+     * @return void
+     */
+    public function testLoadByNameNotAvailable(): void
+    {
+        $this->expectException('\BrowserDetector\Loader\NotFoundException');
+        $this->expectExceptionMessage('the company with name "This company does not exist" was not found');
+
+        $this->object->loadByName('This company does not exist');
     }
 }
