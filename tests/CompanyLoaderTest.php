@@ -11,13 +11,15 @@
 declare(strict_types = 1);
 namespace UaResultTest\Company;
 
+use PHPUnit\Framework\TestCase;
+use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use UaResult\Company\CompanyLoader;
 
 /**
  * Test class for \BrowserDetector\Loader\CompanyLoader
  */
-class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
+class CompanyLoaderTest extends TestCase
 {
     /**
      * @var \UaResult\Company\CompanyLoader
@@ -33,7 +35,8 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../cache/');
-        $this->object = CompanyLoader::getInstance($cache);
+        $logger       = new NullLogger();
+        $this->object = CompanyLoader::getInstance($cache, $logger);
     }
 
     /**

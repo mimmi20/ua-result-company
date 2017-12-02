@@ -14,7 +14,10 @@ namespace UaResult\Company;
 use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use Psr\Cache\CacheItemPoolInterface;
+use Psr\Cache\InvalidArgumentException;
+use Psr\Log\LoggerInterface;
 use Seld\JsonLint\JsonParser;
+use Seld\JsonLint\ParsingException;
 
 /**
  * Browser detection class
@@ -33,27 +36,35 @@ class CompanyLoader implements LoaderInterface
     private $cache;
 
     /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
      * @var self|null
      */
     private static $instance;
 
     /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @param \Psr\Log\LoggerInterface          $logger
      */
-    private function __construct(CacheItemPoolInterface $cache)
+    private function __construct(CacheItemPoolInterface $cache, LoggerInterface $logger)
     {
-        $this->cache = $cache;
+        $this->cache  = $cache;
+        $this->logger = $logger;
     }
 
     /**
      * @param \Psr\Cache\CacheItemPoolInterface $cache
+     * @param \Psr\Log\LoggerInterface          $logger
      *
      * @return self
      */
-    public static function getInstance(CacheItemPoolInterface $cache)
+    public static function getInstance(CacheItemPoolInterface $cache, LoggerInterface $logger)
     {
         if (null === self::$instance) {
-            self::$instance = new self($cache);
+            self::$instance = new self($cache, $logger);
         }
 
         return self::$instance;
@@ -76,11 +87,23 @@ class CompanyLoader implements LoaderInterface
      */
     public function has(string $key): bool
     {
-        $this->init();
+        try {
+            $this->init();
+        } catch (InvalidArgumentException | ParsingException $e) {
+            $this->logger->error($e);
 
-        $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
+            return false;
+        }
 
-        return $cacheItem->isHit();
+        try {
+            $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
+
+            return $cacheItem->isHit();
+        } catch (InvalidArgumentException $e) {
+            $this->logger->error($e);
+        }
+
+        return false;
     }
 
     /**
@@ -94,15 +117,22 @@ class CompanyLoader implements LoaderInterface
      */
     public function load(string $key): CompanyInterface
     {
-        $this->init();
+        try {
+            $this->init();
+        } catch (InvalidArgumentException | ParsingException $e) {
+            throw new NotFoundException('the company with key "' . $key . '" was not found', 0, $e);
+        }
 
         if (!$this->has($key)) {
             throw new NotFoundException('the company with key "' . $key . '" was not found');
         }
 
-        $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
-
-        $company = $cacheItem->get();
+        try {
+            $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
+            $company   = $cacheItem->get();
+        } catch (InvalidArgumentException $e) {
+            throw new NotFoundException('the company with key "' . $key . '" was not found', 0, $e);
+        }
 
         return new Company(
             $company->type,
@@ -120,14 +150,22 @@ class CompanyLoader implements LoaderInterface
      */
     public function loadByName(string $name): CompanyInterface
     {
-        $this->init();
+        try {
+            $this->init();
+        } catch (InvalidArgumentException | ParsingException $e) {
+            throw new NotFoundException('the company with name "' . $name . '" was not found', 0, $e);
+        }
 
-        foreach ($this->getCompanies() as $key => $companyData) {
-            if ($name !== $companyData->name) {
-                continue;
+        try {
+            foreach ($this->getCompanies() as $key => $companyData) {
+                if ($name !== $companyData->name) {
+                    continue;
+                }
+
+                return $this->load($key);
             }
-
-            return $this->load($key);
+        } catch (InvalidArgumentException $e) {
+            $this->logger->error($e);
         }
 
         throw new NotFoundException('the company with name "' . $name . '" was not found');
@@ -142,14 +180,22 @@ class CompanyLoader implements LoaderInterface
      */
     public function loadByBrandName(string $name): CompanyInterface
     {
-        $this->init();
+        try {
+            $this->init();
+        } catch (InvalidArgumentException | ParsingException $e) {
+            throw new NotFoundException('the company with brand name "' . $name . '" was not found', 0, $e);
+        }
 
-        foreach ($this->getCompanies() as $key => $companyData) {
-            if ($name !== $companyData->brandname) {
-                continue;
+        try {
+            foreach ($this->getCompanies() as $key => $companyData) {
+                if ($name !== $companyData->brandname) {
+                    continue;
+                }
+
+                return $this->load($key);
             }
-
-            return $this->load($key);
+        } catch (InvalidArgumentException $e) {
+            $this->logger->error($e);
         }
 
         throw new NotFoundException('the company with brand name "' . $name . '" was not found');
@@ -157,6 +203,9 @@ class CompanyLoader implements LoaderInterface
 
     /**
      * initializes cache
+     *
+     * @throws \Psr\Cache\InvalidArgumentException
+     * @throws \Seld\JsonLint\ParsingException
      *
      * @return void
      */
@@ -196,9 +245,9 @@ class CompanyLoader implements LoaderInterface
     }
 
     /**
-     * @throws \Seld\JsonLint\ParsingException
+     * @throws \Psr\Cache\InvalidArgumentException
      *
-     * @return array[]|\Generator
+     * @return \Generator|\stdClass[]
      */
     private function getCompanies(): \Generator
     {
