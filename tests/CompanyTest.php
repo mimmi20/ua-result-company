@@ -11,9 +11,10 @@
 declare(strict_types = 1);
 namespace UaResultTest\Company;
 
+use PHPUnit\Framework\TestCase;
 use UaResult\Company\Company;
 
-class CompanyTest extends \PHPUnit\Framework\TestCase
+class CompanyTest extends TestCase
 {
     /**
      * @return void

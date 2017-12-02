@@ -11,13 +11,15 @@
 declare(strict_types = 1);
 namespace UaResultTest\Company;
 
+use PHPUnit\Framework\TestCase;
+use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use UaResult\Company\CompanyLoader;
 
 /**
  * Test class for \BrowserDetector\Loader\CompanyLoader
  */
-class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
+class CompanyLoaderTest extends TestCase
 {
     /**
      * @var \UaResult\Company\CompanyLoader
@@ -33,7 +35,8 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../cache/');
-        $this->object = CompanyLoader::getInstance($cache);
+        $logger       = new NullLogger();
+        $this->object = CompanyLoader::getInstance($cache, $logger);
     }
 
     /**
@@ -126,14 +129,9 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
-                'Google Inc',
-                'Google Inc',
+                'Google Inc.',
+                'Google Inc.',
                 'Google',
-            ],
-            [
-                'This company does not exist',
-                null,
-                null,
             ],
         ];
     }
@@ -175,13 +173,8 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'Google',
-                'Google Inc',
+                'Google Inc.',
                 'Google',
-            ],
-            [
-                'This company does not exist',
-                null,
-                null,
             ],
         ];
     }
@@ -195,5 +188,27 @@ class CompanyLoaderTest extends \PHPUnit\Framework\TestCase
         $this->expectExceptionMessage('the company with key "does not exist" was not found');
 
         $this->object->load('does not exist');
+    }
+
+    /**
+     * @return void
+     */
+    public function testLoadByBrandNameNotAvailable(): void
+    {
+        $this->expectException('\BrowserDetector\Loader\NotFoundException');
+        $this->expectExceptionMessage('the company with brand name "This company does not exist" was not found');
+
+        $this->object->loadByBrandName('This company does not exist');
+    }
+
+    /**
+     * @return void
+     */
+    public function testLoadByNameNotAvailable(): void
+    {
+        $this->expectException('\BrowserDetector\Loader\NotFoundException');
+        $this->expectExceptionMessage('the company with name "This company does not exist" was not found');
+
+        $this->object->loadByName('This company does not exist');
     }
 }
