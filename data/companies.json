@@ -5518,5 +5518,10 @@
     "type": "Naver",
     "name": "Naver",
     "brandname": "Naver"
+  },
+  "NetEase": {
+    "type": "NetEase",
+    "name": "NetEase, Inc.",
+    "brandname": "NetEase"
   }
 }
