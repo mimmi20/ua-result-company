@@ -311,8 +311,8 @@
   },
   "Benq": {
     "type": "Benq",
-    "name": "Benq",
-    "brandname": "Benq"
+    "name": "BenQ",
+    "brandname": "BenQ"
   },
   "BerkleyUniversity": {
     "type": "BerkleyUniversity",
@@ -1631,8 +1631,8 @@
   },
   "LePan": {
     "type": "LePan",
-    "name": "LePan",
-    "brandname": "LePan"
+    "name": "Le Pan",
+    "brandname": "Le Pan"
   },
   "Lexand": {
     "type": "Lexand",
@@ -3651,8 +3651,8 @@
   },
   "ZuminternetCorp": {
     "type": "ZuminternetCorp",
-    "name": "ZUMinternet Corp",
-    "brandname": "ZUMinternet"
+    "name": "ZUM internet Corp.",
+    "brandname": "ZUM internet"
   },
   "YP": {
     "type": "YP",
@@ -3906,8 +3906,8 @@
   },
   "Itel": {
     "type": "Itel",
-    "name": "www.itel-mobile.com",
-    "brandname": "itel"
+    "name": "iTel Mobile",
+    "brandname": "iTel"
   },
   "Hans Hasselberg": {
     "type": "Hans Hasselberg",
@@ -4591,7 +4591,7 @@
   },
   "CROSSCALL": {
     "type": "CROSSCALL",
-    "name": "CROSSCALL",
+    "name": "CROSSCALL SAS",
     "brandname": "CROSSCALL"
   },
   "Accelerated Technology": {
@@ -4636,8 +4636,8 @@
   },
   "HOMTOM": {
     "type": "HOMTOM",
-    "name": "HOMTOM",
-    "brandname": "HOMTOM"
+    "name": "Homtom",
+    "brandname": "Homtom"
   },
   "Firefly Mobile": {
     "type": "Firefly Mobile",
@@ -4646,8 +4646,8 @@
   },
   "myPhone": {
     "type": "myPhone",
-    "name": "myPhone",
-    "brandname": "myPhone"
+    "name": "MyPhone",
+    "brandname": "MyPhone"
   },
   "Vernee": {
     "type": "Vernee",
@@ -5523,5 +5523,580 @@
     "type": "NetEase",
     "name": "NetEase, Inc.",
     "brandname": "NetEase"
+  },
+  "YunYun": {
+    "type": "YunYun",
+    "name": "YunYun",
+    "brandname": "YunYun"
+  },
+  "Hwacha": {
+    "type": "Hwacha",
+    "name": "Hwacha ApS",
+    "brandname": "Hwacha"
+  },
+  "Robert Graham": {
+    "type": "Robert Graham",
+    "name": "Robert Graham",
+    "brandname": "Robert Graham"
+  },
+  "sqlmap": {
+    "type": "sqlmap",
+    "name": "sqlmap",
+    "brandname": "sqlmap"
+  },
+  "Nikon": {
+    "type": "Nikon",
+    "name": "Nikon",
+    "brandname": "Nikon"
+  },
+  "OUYA": {
+    "type": "OUYA",
+    "name": "OUYA",
+    "brandname": "OUYA"
+  },
+  "Hyrican": {
+    "type": "Hyrican",
+    "name": "Hyrican",
+    "brandname": "Hyrican"
+  },
+  "Airness": {
+    "type": "Airness",
+    "name": "Airness",
+    "brandname": "Airness"
+  },
+  "Cricket": {
+    "type": "Cricket",
+    "name": "Cricket",
+    "brandname": "Cricket"
+  },
+  "Ericsson": {
+    "type": "Ericsson",
+    "name": "Ericsson",
+    "brandname": "Ericsson"
+  },
+  "Sagem": {
+    "type": "Sagem",
+    "name": "Sagem",
+    "brandname": "Sagem"
+  },
+  "TIANYU": {
+    "type": "TIANYU",
+    "name": "TIANYU",
+    "brandname": "TIANYU"
+  },
+  "VK Mobile": {
+    "type": "VK Mobile",
+    "name": "VK Mobile",
+    "brandname": "VK Mobile"
+  },
+  "Cowon": {
+    "type": "Cowon",
+    "name": "Cowon",
+    "brandname": "Cowon"
+  },
+  "Goly": {
+    "type": "Goly",
+    "name": "Goly",
+    "brandname": "Goly"
+  },
+  "Hosin": {
+    "type": "Hosin",
+    "name": "Hosin",
+    "brandname": "Hosin"
+  },
+  "Hasee": {
+    "type": "Hasee",
+    "name": "Hasee",
+    "brandname": "Hasee"
+  },
+  "iOcean": {
+    "type": "iOcean",
+    "name": "iOcean",
+    "brandname": "iOcean"
+  },
+  "Inkti": {
+    "type": "Inkti",
+    "name": "Inkti",
+    "brandname": "Inkti"
+  },
+  "i-Joy": {
+    "type": "i-Joy",
+    "name": "i-Joy",
+    "brandname": "i-Joy"
+  },
+  "INQ": {
+    "type": "INQ",
+    "name": "INQ",
+    "brandname": "INQ"
+  },
+  "iBerry": {
+    "type": "iBerry",
+    "name": "iBerry",
+    "brandname": "iBerry"
+  },
+  "Koobee": {
+    "type": "Koobee",
+    "name": "Koobee",
+    "brandname": "Koobee"
+  },
+  "KT-Tech": {
+    "type": "KT-Tech",
+    "name": "KT-Tech",
+    "brandname": "KT-Tech"
+  },
+  "Kingsun": {
+    "type": "Kingsun",
+    "name": "Kingsun",
+    "brandname": "Kingsun"
+  },
+  "KOPO": {
+    "type": "KOPO",
+    "name": "KOPO",
+    "brandname": "KOPO"
+  },
+  "Koridy": {
+    "type": "Koridy",
+    "name": "Koridy",
+    "brandname": "Koridy"
+  },
+  "Kumai": {
+    "type": "Kumai",
+    "name": "Kumai",
+    "brandname": "Kumai"
+  },
+  "Konrow": {
+    "type": "Konrow",
+    "name": "Konrow",
+    "brandname": "Konrow"
+  },
+  "Lingwin": {
+    "type": "Lingwin",
+    "name": "Lingwin",
+    "brandname": "Lingwin"
+  },
+  "MEEG": {
+    "type": "MEEG",
+    "name": "MEEG",
+    "brandname": "MEEG"
+  },
+  "MIXC": {
+    "type": "MIXC",
+    "name": "MIXC",
+    "brandname": "MIXC"
+  },
+  "Mofut": {
+    "type": "Mofut",
+    "name": "Mofut",
+    "brandname": "Mofut"
+  },
+  "Majestic": {
+    "type": "Majestic",
+    "name": "Majestic",
+    "brandname": "Majestic"
+  },
+  "MLLED": {
+    "type": "MLLED",
+    "name": "MLLED",
+    "brandname": "MLLED"
+  },
+  "MTT": {
+    "type": "MTT",
+    "name": "M.T.T.",
+    "brandname": "M.T.T."
+  },
+  "MEU": {
+    "type": "MEU",
+    "name": "MEU",
+    "brandname": "MEU"
+  },
+  "Noain": {
+    "type": "Noain",
+    "name": "Noain",
+    "brandname": "Noain"
+  },
+  "Neffos": {
+    "type": "Neffos",
+    "name": "Neffos",
+    "brandname": "Neffos"
+  },
+  "Nous": {
+    "type": "Nous",
+    "name": "Nous",
+    "brandname": "Nous"
+  },
+  "Nexian": {
+    "type": "Nexian",
+    "name": "Nexian",
+    "brandname": "Nexian"
+  },
+  "Opsson": {
+    "type": "Opsson",
+    "name": "Opsson",
+    "brandname": "Opsson"
+  },
+  "Pioneer": {
+    "type": "Pioneer",
+    "name": "Pioneer",
+    "brandname": "Pioneer"
+  },
+  "Polaroid": {
+    "type": "Polaroid",
+    "name": "Polaroid",
+    "brandname": "Polaroid"
+  },
+  "Positivo": {
+    "type": "Positivo",
+    "name": "Positivo",
+    "brandname": "Positivo"
+  },
+  "Qilive": {
+    "type": "Qilive",
+    "name": "Qilive",
+    "brandname": "Qilive"
+  },
+  "Quechua": {
+    "type": "Quechua",
+    "name": "Quechua",
+    "brandname": "Quechua"
+  },
+  "Sencor": {
+    "type": "Sencor",
+    "name": "Sencor",
+    "brandname": "Sencor"
+  },
+  "Stonex": {
+    "type": "Stonex",
+    "name": "Stonex",
+    "brandname": "Stonex"
+  },
+  "SunVan": {
+    "type": "SunVan",
+    "name": "SunVan",
+    "brandname": "SunVan"
+  },
+  "Telenor": {
+    "type": "Telenor",
+    "name": "Telenor",
+    "brandname": "Telenor"
+  },
+  "TiPhone": {
+    "type": "TiPhone",
+    "name": "TiPhone",
+    "brandname": "TiPhone"
+  },
+  "Tunisie Telecom": {
+    "type": "Tunisie Telecom",
+    "name": "Tunisie Telecom",
+    "brandname": "Tunisie Telecom"
+  },
+  "TVC": {
+    "type": "TVC",
+    "name": "TVC",
+    "brandname": "TVC"
+  },
+  "UMIDIGI": {
+    "type": "UMIDIGI",
+    "name": "UMIDIGI",
+    "brandname": "UMIDIGI"
+  },
+  "Uniscope": {
+    "type": "Uniscope",
+    "name": "Uniscope",
+    "brandname": "Uniscope"
+  },
+  "Walton": {
+    "type": "Walton",
+    "name": "Walton",
+    "brandname": "Walton"
+  },
+  "Wolfgang": {
+    "type": "Wolfgang",
+    "name": "Wolfgang",
+    "brandname": "Wolfgang"
+  },
+  "Yusun": {
+    "type": "Yusun",
+    "name": "Yusun",
+    "brandname": "Yusun"
+  },
+  "Ytone": {
+    "type": "Ytone",
+    "name": "Ytone",
+    "brandname": "Ytone"
+  },
+  "Zeemi": {
+    "type": "Zeemi",
+    "name": "Zeemi",
+    "brandname": "Zeemi"
+  },
+  "Bird": {
+    "type": "Bird",
+    "name": "Bird",
+    "brandname": "Bird"
+  },
+  "Brondi": {
+    "type": "Brondi",
+    "name": "Brondi",
+    "brandname": "Brondi"
+  },
+  "Boway": {
+    "type": "Boway",
+    "name": "Boway",
+    "brandname": "Boway"
+  },
+  "China Mobile": {
+    "type": "China Mobile",
+    "name": "China Mobile Ltd.",
+    "brandname": "China Mobile"
+  },
+  "ConCorde": {
+    "type": "ConCorde",
+    "name": "ConCorde",
+    "brandname": "ConCorde"
+  },
+  "Cherry Mobile": {
+    "type": "Cherry Mobile",
+    "name": "Cherry Mobile",
+    "brandname": "Cherry Mobile"
+  },
+  "Desay": {
+    "type": "Desay",
+    "name": "Desay",
+    "brandname": "Desay"
+  },
+  "Datang": {
+    "type": "Datang",
+    "name": "Datang",
+    "brandname": "Datang"
+  },
+  "Doov": {
+    "type": "Doov",
+    "name": "Doov",
+    "brandname": "Doov"
+  },
+  "EBEST": {
+    "type": "EBEST",
+    "name": "EBEST",
+    "brandname": "EBEST"
+  },
+  "Eton": {
+    "type": "Eton",
+    "name": "Eton",
+    "brandname": "Eton"
+  },
+  "Evertek": {
+    "type": "Evertek",
+    "name": "Evertek",
+    "brandname": "Evertek"
+  },
+  "Lexibook": {
+    "type": "Lexibook",
+    "name": "Lexibook",
+    "brandname": "Lexibook"
+  },
+  "Mecer": {
+    "type": "Mecer",
+    "name": "Mecer",
+    "brandname": "Mecer"
+  },
+  "Manta Multimedia": {
+    "type": "Manta Multimedia",
+    "name": "Manta Multimedia",
+    "brandname": "Manta Multimedia"
+  },
+  "ProScan": {
+    "type": "ProScan",
+    "name": "ProScan",
+    "brandname": "ProScan"
+  },
+  "Readboy": {
+    "type": "Readboy",
+    "name": "Readboy",
+    "brandname": "Readboy"
+  },
+  "RCA Tablets": {
+    "type": "RCA Tablets",
+    "name": "RCA Tablets",
+    "brandname": "RCA Tablets"
+  },
+  "Storex": {
+    "type": "Storex",
+    "name": "Storex",
+    "brandname": "Storex"
+  },
+  "SuperSonic": {
+    "type": "SuperSonic",
+    "name": "SuperSonic",
+    "brandname": "SuperSonic"
+  },
+  "Sumvision": {
+    "type": "Sumvision",
+    "name": "Sumvision",
+    "brandname": "Sumvision"
+  },
+  "Unowhy": {
+    "type": "Unowhy",
+    "name": "Unowhy",
+    "brandname": "Unowhy"
+  },
+  "Axxion": {
+    "type": "Axxion",
+    "name": "Axxion",
+    "brandname": "Axxion"
+  },
+  "Carrefour": {
+    "type": "Carrefour",
+    "name": "Carrefour",
+    "brandname": "Carrefour"
+  },
+  "Crius Mea": {
+    "type": "Crius Mea",
+    "name": "Crius Mea",
+    "brandname": "Crius Mea"
+  },
+  "CnM": {
+    "type": "CnM",
+    "name": "CnM",
+    "brandname": "CnM"
+  },
+  "Danew": {
+    "type": "Danew",
+    "name": "Danew",
+    "brandname": "Danew"
+  },
+  "Energy Sistem": {
+    "type": "Energy Sistem",
+    "name": "Energy Sistem",
+    "brandname": "Energy Sistem"
+  },
+  "ECS": {
+    "type": "ECS",
+    "name": "ECS",
+    "brandname": "ECS"
+  },
+  "Gemini": {
+    "type": "Gemini",
+    "name": "Gemini",
+    "brandname": "Gemini"
+  },
+  "Grundig": {
+    "type": "Grundig",
+    "name": "Grundig",
+    "brandname": "Grundig"
+  },
+  "Hi-Level": {
+    "type": "Hi-Level",
+    "name": "Hi-Level",
+    "brandname": "Hi-Level"
+  },
+  "Hyundai": {
+    "type": "Hyundai",
+    "name": "Hyundai",
+    "brandname": "Hyundai"
+  },
+  "Altech UEC": {
+    "type": "Altech UEC",
+    "name": "Altech UEC",
+    "brandname": "Altech"
+  },
+  "ARRIS": {
+    "type": "ARRIS",
+    "name": "ARRIS",
+    "brandname": "ARRIS"
+  },
+  "Airties": {
+    "type": "Airties",
+    "name": "Airties",
+    "brandname": "Airties"
+  },
+  "BangOlufsen": {
+    "type": "BangOlufsen",
+    "name": "BangOlufsen",
+    "brandname": "BangOlufsen"
+  },
+  "CreNova": {
+    "type": "CreNova",
+    "name": "CreNova",
+    "brandname": "CreNova"
+  },
+  "DMM": {
+    "type": "DMM",
+    "name": "DMM",
+    "brandname": "DMM"
+  },
+  "Dune HD": {
+    "type": "Dune HD",
+    "name": "Dune HD",
+    "brandname": "Dune HD"
+  },
+  "Humax": {
+    "type": "Humax",
+    "name": "Humax",
+    "brandname": "Humax"
+  },
+  "Ikea": {
+    "type": "Ikea",
+    "name": "Ikea",
+    "brandname": "Ikea"
+  },
+  "Intek": {
+    "type": "Intek",
+    "name": "Intek",
+    "brandname": "Intek"
+  },
+  "Inverto": {
+    "type": "Inverto",
+    "name": "Inverto",
+    "brandname": "Inverto"
+  },
+  "MediaTek": {
+    "type": "MediaTek",
+    "name": "MediaTek",
+    "brandname": "MediaTek"
+  },
+  "Netgear": {
+    "type": "Netgear",
+    "name": "Netgear",
+    "brandname": "Netgear"
+  },
+  "PEAQ": {
+    "type": "PEAQ",
+    "name": "PEAQ",
+    "brandname": "PEAQ"
+  },
+  "Rikomagic": {
+    "type": "Rikomagic",
+    "name": "Rikomagic",
+    "brandname": "Rikomagic"
+  },
+  "Skyworth": {
+    "type": "Skyworth",
+    "name": "Skyworth",
+    "brandname": "Skyworth"
+  },
+  "Smart": {
+    "type": "Smart",
+    "name": "Smart",
+    "brandname": "Smart"
+  },
+  "Selevision": {
+    "type": "Selevision",
+    "name": "Selevision",
+    "brandname": "Selevision"
+  },
+  "TechnoTrend": {
+    "type": "TechnoTrend",
+    "name": "TechnoTrend",
+    "brandname": "TechnoTrend"
+  },
+  "Vestel": {
+    "type": "Vestel",
+    "name": "Vestel",
+    "brandname": "Vestel"
+  },
+  "Videoweb": {
+    "type": "Videoweb",
+    "name": "Videoweb",
+    "brandname": "Videoweb"
   }
 }

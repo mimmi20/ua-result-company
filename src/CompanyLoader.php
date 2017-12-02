@@ -180,9 +180,9 @@ class CompanyLoader implements LoaderInterface
             foreach ($companies as $key => $data) {
                 $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
 
-                $companyData = new \stdClass();
-                $companyData->type = $key;
-                $companyData->name = $data['name'];
+                $companyData            = new \stdClass();
+                $companyData->type      = $key;
+                $companyData->name      = $data['name'];
                 $companyData->brandname = $data['brandname'];
 
                 $cacheItem->set($companyData);
