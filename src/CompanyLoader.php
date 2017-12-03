@@ -11,6 +11,8 @@
 declare(strict_types = 1);
 namespace UaResult\Company;
 
+use Assert\Assertion;
+use Assert\AssertionFailedException;
 use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use Psr\Cache\CacheItemPoolInterface;
@@ -227,6 +229,7 @@ class CompanyLoader implements LoaderInterface
             $this->cache->save($cacheItem);
 
             foreach ($companies as $key => $data) {
+                $key       = (string) $key;
                 $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
 
                 $companyData            = new \stdClass();
@@ -260,9 +263,17 @@ class CompanyLoader implements LoaderInterface
         $companies = $cacheItem->get();
 
         foreach ($companies as $key) {
-            $cacheItem = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
+            $cacheItem  = $this->cache->getItem(hash('sha512', 'company-cache-' . $key));
+            $cacheValue = $cacheItem->get();
 
-            yield $key => $cacheItem->get();
+            try {
+                Assertion::isInstanceOf($cacheValue, '\stdClass');
+            } catch (AssertionFailedException|\Assert\InvalidArgumentException $e) {
+                $this->logger->error('a company with key "' . $key . '" was not found in the cache');
+                continue;
+            }
+
+            yield $key => $cacheValue;
         }
     }
 }
