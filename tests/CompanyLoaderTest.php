@@ -35,7 +35,13 @@ class CompanyLoaderTest extends TestCase
     protected function setUp(): void
     {
         $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../cache/');
-        $logger       = new NullLogger();
+        $logger       = $this->getMockBuilder(NullLogger::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['error'])
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('error');
         $this->object = CompanyLoader::getInstance($cache, $logger);
     }
 
