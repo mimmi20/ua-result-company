@@ -268,8 +268,9 @@ class CompanyLoader implements LoaderInterface
 
             try {
                 Assertion::isInstanceOf($cacheValue, '\stdClass');
-            } catch (AssertionFailedException|\Assert\InvalidArgumentException $e) {
+            } catch (AssertionFailedException | \Assert\InvalidArgumentException $e) {
                 $this->logger->error('a company with key "' . $key . '" was not found in the cache');
+
                 continue;
             }
 
