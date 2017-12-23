@@ -12,8 +12,6 @@ declare(strict_types = 1);
 namespace UaResultTest\Company;
 
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use UaResult\Company\CompanyLoader;
 
 /**
@@ -34,15 +32,7 @@ class CompanyLoaderTest extends TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../cache/');
-        $logger       = $this->getMockBuilder(NullLogger::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['error'])
-            ->getMock();
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $this->object = CompanyLoader::getInstance($cache, $logger);
+        $this->object = CompanyLoader::getInstance();
     }
 
     /**
