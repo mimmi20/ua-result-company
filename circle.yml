@@ -11,4 +11,4 @@ dependencies:
 test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
-    - vendor/bin/phpunit --coverage-text --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml
+    - vendor/bin/phpunit --colors --columns 117 --coverage-text --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml
