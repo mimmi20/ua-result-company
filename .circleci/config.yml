@@ -16,8 +16,7 @@ jobs:
           key: composer-v1-{{ checksum "composer.json" }}
           paths:
             - vendor
-      - run: mkdir -p $CIRCLE_TEST_REPORTS/phpunit
-      - run: vendor/bin/phpunit --colors --columns 117 --coverage-text --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml
+      - run: vendor/bin/phpunit --colors --columns 117 --coverage-text
 
 workflows:
   version: 2
