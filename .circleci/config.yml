@@ -71,7 +71,7 @@ jobs:
 
 workflows:
   version: 2
-  phpunit:
+  tests:
     jobs:
       - phpunit
       - phpcs
