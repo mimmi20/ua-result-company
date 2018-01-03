@@ -12,9 +12,6 @@ declare(strict_types = 1);
 namespace UaResultTest\Company;
 
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
-use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaResult\Company\CompanyLoader;
 
 /**
@@ -35,15 +32,7 @@ class CompanyLoaderTest extends TestCase
      */
     protected function setUp(): void
     {
-        $cache        = new FilesystemAdapter('', 0, __DIR__ . '/../cache/');
-        $logger       = $this->getMockBuilder(NullLogger::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['error'])
-            ->getMock();
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $this->object = CompanyLoader::getInstance($cache, $logger);
+        $this->object = CompanyLoader::getInstance();
     }
 
     /**
@@ -217,138 +206,5 @@ class CompanyLoaderTest extends TestCase
         $this->expectExceptionMessage('the company with name "This company does not exist" was not found');
 
         $this->object->loadByName('This company does not exist');
-    }
-
-    /**
-     * @return void
-     */
-    public function testHasFailsDuringInit(): void
-    {
-        $exception = new InvalidArgumentException();
-
-        $cache = $this->getMockBuilder(FilesystemAdapter::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['getItem'])
-            ->getMock();
-        $cache
-            ->expects(self::once())
-            ->method('getItem')
-            ->willThrowException($exception);
-
-        $logger = $this->getMockBuilder(NullLogger::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['error'])
-            ->getMock();
-        $logger
-            ->expects(self::once())
-            ->method('error')
-            ->with($exception);
-
-        CompanyLoader::resetInstance();
-        $object = CompanyLoader::getInstance($cache, $logger);
-
-        self::assertFalse($object->has('This company does not exist'));
-    }
-
-    /**
-     * @return void
-     */
-    public function testLoadFailsDuringInit(): void
-    {
-        $this->expectException('\BrowserDetector\Loader\NotFoundException');
-        $this->expectExceptionMessage('the company with key "This company does not exist" was not found');
-
-        $exception = new InvalidArgumentException();
-
-        $cache = $this->getMockBuilder(FilesystemAdapter::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['getItem'])
-            ->getMock();
-        $cache
-            ->expects(self::once())
-            ->method('getItem')
-            ->willThrowException($exception);
-
-        $logger = $this->getMockBuilder(NullLogger::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['error'])
-            ->getMock();
-        $logger
-            ->expects(self::never())
-            ->method('error')
-            ->with($exception);
-
-        CompanyLoader::resetInstance();
-        $object = CompanyLoader::getInstance($cache, $logger);
-
-        $object->load('This company does not exist');
-    }
-
-    /**
-     * @return void
-     */
-    public function testLoadbynameFailsDuringInit(): void
-    {
-        $this->expectException('\BrowserDetector\Loader\NotFoundException');
-        $this->expectExceptionMessage('the company with name "This company does not exist" was not found');
-
-        $exception = new InvalidArgumentException();
-
-        $cache = $this->getMockBuilder(FilesystemAdapter::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['getItem'])
-            ->getMock();
-        $cache
-            ->expects(self::once())
-            ->method('getItem')
-            ->willThrowException($exception);
-
-        $logger = $this->getMockBuilder(NullLogger::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['error'])
-            ->getMock();
-        $logger
-            ->expects(self::never())
-            ->method('error')
-            ->with($exception);
-
-        CompanyLoader::resetInstance();
-        $object = CompanyLoader::getInstance($cache, $logger);
-
-        $object->loadByName('This company does not exist');
-    }
-
-    /**
-     * @return void
-     */
-    public function testLoadbybrandnameFailsDuringInit(): void
-    {
-        $this->expectException('\BrowserDetector\Loader\NotFoundException');
-        $this->expectExceptionMessage('the company with brand name "This company does not exist" was not found');
-
-        $exception = new InvalidArgumentException();
-
-        $cache = $this->getMockBuilder(FilesystemAdapter::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['getItem'])
-            ->getMock();
-        $cache
-            ->expects(self::once())
-            ->method('getItem')
-            ->willThrowException($exception);
-
-        $logger = $this->getMockBuilder(NullLogger::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['error'])
-            ->getMock();
-        $logger
-            ->expects(self::never())
-            ->method('error')
-            ->with($exception);
-
-        CompanyLoader::resetInstance();
-        $object = CompanyLoader::getInstance($cache, $logger);
-
-        $object->loadByBrandName('This company does not exist');
     }
 }
