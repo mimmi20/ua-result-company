@@ -4201,7 +4201,7 @@
   },
   "Infinix": {
     "type": "Infinix",
-    "name": "Infinix",
+    "name": "Infinix Inc.",
     "brandname": "Infinix"
   },
   "T0PHackTeam": {
@@ -5546,7 +5546,7 @@
   },
   "Nikon": {
     "type": "Nikon",
-    "name": "Nikon",
+    "name": "Kabushiki-gaisha Nikon",
     "brandname": "Nikon"
   },
   "OUYA": {
@@ -6098,5 +6098,35 @@
     "type": "Videoweb",
     "name": "Videoweb",
     "brandname": "Videoweb"
+  },
+  "SunMicrosystems": {
+    "type": "SunMicrosystems",
+    "name": "Sun Microsystems, Inc.",
+    "brandname": "Sun"
+  },
+  "InFocus": {
+    "type": "InFocus",
+    "name": "InFocus, Inc.",
+    "brandname": "InFocus"
+  },
+  "InnJoo": {
+    "type": "InnJoo",
+    "name": "InnJoo Technology FZE",
+    "brandname": "InnJoo"
+  },
+  "Azpen": {
+    "type": "Azpen",
+    "name": "Azpen Innovation",
+    "brandname": "Azpen"
+  },
+  "Ouya": {
+    "type": "Ouya",
+    "name": "OUYA, Inc.",
+    "brandname": "Ouya"
+  },
+  "BenQ-Siemens": {
+    "type": "BenQ-Siemens",
+    "name": "BenQ Mobile GmbH & Co. OHG",
+    "brandname": "BenQ-Siemens"
   }
 }
