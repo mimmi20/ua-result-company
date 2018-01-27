@@ -1211,8 +1211,8 @@
   },
   "Hisense": {
     "type": "Hisense",
-    "name": "Hisense",
-    "brandname": "Hisense"
+    "name": "HiSense Company Ltd.",
+    "brandname": "HiSense"
   },
   "HitLeap": {
     "type": "HitLeap",
@@ -2214,6 +2214,11 @@
     "name": "Orange S.A.",
     "brandname": "Orange"
   },
+  "SPV": {
+    "type": "SPV",
+    "name": "Orange S.A.",
+    "brandname": "Orange SPV"
+  },
   "OtterBrowserOrg": {
     "type": "OtterBrowserOrg",
     "name": "otter-browser.org",
@@ -2883,11 +2888,6 @@
     "type": "Sprint",
     "name": "Sprint",
     "brandname": "Sprint"
-  },
-  "SPV": {
-    "type": "SPV",
-    "name": "SPV",
-    "brandname": "SPV"
   },
   "Srelease": {
     "type": "Srelease",
@@ -5601,12 +5601,12 @@
   },
   "Hosin": {
     "type": "Hosin",
-    "name": "Hosin",
+    "name": "Hosin China Co., Limited",
     "brandname": "Hosin"
   },
   "Hasee": {
     "type": "Hasee",
-    "name": "Hasee",
+    "name": "Hasee Computer Co., Ltd",
     "brandname": "Hasee"
   },
   "iOcean": {
@@ -6128,5 +6128,10 @@
     "type": "BenQ-Siemens",
     "name": "BenQ Mobile GmbH & Co. OHG",
     "brandname": "BenQ-Siemens"
+  },
+  "Qvod Technology": {
+    "type": "Qvod Technology",
+    "name": "Shenzhen Qvod Technology Co.,Ltd.",
+    "brandname": "Qvod"
   }
 }
