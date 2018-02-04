@@ -1871,7 +1871,7 @@
   },
   "Micromax": {
     "type": "Micromax",
-    "name": "Micromax",
+    "name": "Micromax Informatics Ltd.",
     "brandname": "Micromax"
   },
   "Microsoft": {
@@ -3896,7 +3896,7 @@
   },
   "YU": {
     "type": "YU",
-    "name": "YU",
+    "name": "YU Televentures",
     "brandname": "YU"
   },
   "Thornton Pickard": {
@@ -5806,7 +5806,7 @@
   },
   "Walton": {
     "type": "Walton",
-    "name": "Walton",
+    "name": "Walton Hi-Tech Industries LTD.",
     "brandname": "Walton"
   },
   "Wolfgang": {
@@ -5856,7 +5856,7 @@
   },
   "Cherry Mobile": {
     "type": "Cherry Mobile",
-    "name": "Cherry Mobile",
+    "name": "Cosmic Technologies, Inc",
     "brandname": "Cherry Mobile"
   },
   "Desay": {
@@ -6133,5 +6133,25 @@
     "type": "Qvod Technology",
     "name": "Shenzhen Qvod Technology Co.,Ltd.",
     "brandname": "Qvod"
+  },
+  "Quadro": {
+    "type": "Quadro",
+    "name": "Quadro",
+    "brandname": "Quadro"
+  },
+  "Flipkart": {
+    "type": "Flipkart",
+    "name": "Flipkart",
+    "brandname": "Flipkart"
+  },
+  "Sunsbell": {
+    "type": "Sunsbell",
+    "name": "Sunsbell",
+    "brandname": "Sunsbell"
+  },
+  "BS Mobile": {
+    "type": "BS Mobile",
+    "name": "BS Mobile",
+    "brandname": "BS Mobile"
   }
 }
