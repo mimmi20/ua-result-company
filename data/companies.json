@@ -6153,5 +6153,25 @@
     "type": "BS Mobile",
     "name": "BS Mobile",
     "brandname": "BS Mobile"
+  },
+  "Obi Worldphone": {
+    "type": "Obi Worldphone",
+    "name": "Obi Worldphone",
+    "brandname": "Obi"
+  },
+  "EE": {
+    "type": "EE",
+    "name": "EE Limited",
+    "brandname": "EE"
+  },
+  "CloudFone": {
+    "type": "CloudFone",
+    "name": "CloudFone",
+    "brandname": "CloudFone"
+  },
+  "MoreFine": {
+    "type": "MoreFine",
+    "name": "MoreFine",
+    "brandname": "MoreFine"
   }
 }
