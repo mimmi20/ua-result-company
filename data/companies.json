@@ -6173,5 +6173,10 @@
     "type": "MoreFine",
     "name": "MoreFine",
     "brandname": "MoreFine"
+  },
+  "Aldi-Nord": {
+    "type": "Aldi-Nord",
+    "name": "Aldi Nord",
+    "brandname": "Aldi"
   }
 }
