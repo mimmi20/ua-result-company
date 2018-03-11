@@ -1381,7 +1381,7 @@
   },
   "Intex": {
     "type": "Intex",
-    "name": "Intex",
+    "name": "Intex Technologies (I) Ltd.",
     "brandname": "Intex"
   },
   "InventionMachine": {
@@ -5611,13 +5611,13 @@
   },
   "iOcean": {
     "type": "iOcean",
-    "name": "iOcean",
+    "name": "Shenzhen iOcean Digital Communications Technology Co., Ltd.",
     "brandname": "iOcean"
   },
-  "Inkti": {
-    "type": "Inkti",
-    "name": "Inkti",
-    "brandname": "Inkti"
+  "Intki": {
+    "type": "Intki",
+    "name": "Shenzhen Intki Digital Technology Co., Ltd.",
+    "brandname": "Intki"
   },
   "i-Joy": {
     "type": "i-Joy",
@@ -5636,8 +5636,8 @@
   },
   "Koobee": {
     "type": "Koobee",
-    "name": "Koobee",
-    "brandname": "Koobee"
+    "name": "Shenzhen koobee Communication Equipment Co.,Ltd",
+    "brandname": "koobee"
   },
   "KT-Tech": {
     "type": "KT-Tech",
@@ -6011,8 +6011,8 @@
   },
   "BangOlufsen": {
     "type": "BangOlufsen",
-    "name": "BangOlufsen",
-    "brandname": "BangOlufsen"
+    "name": "Bang & Olufsen a/s",
+    "brandname": "Bang & Olufsen"
   },
   "CreNova": {
     "type": "CreNova",
@@ -6178,5 +6178,10 @@
     "type": "Aldi-Nord",
     "name": "Aldi Nord",
     "brandname": "Aldi"
+  },
+  "Transsion": {
+    "type": "Transsion",
+    "name": "Transsion Holding",
+    "brandname": "Transsion"
   }
 }
