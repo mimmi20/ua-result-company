@@ -6193,5 +6193,10 @@
     "type": "Transsion",
     "name": "Transsion Holding",
     "brandname": "Transsion"
+  },
+  "Maxx": {
+    "type": "Maxx",
+    "name": "Maxx",
+    "brandname": "Maxx"
   }
 }
