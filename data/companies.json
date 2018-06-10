@@ -6198,5 +6198,10 @@
     "type": "Maxx",
     "name": "Maxx",
     "brandname": "Maxx"
+  },
+  "Switel": {
+    "type": "Switel",
+    "name": "Telgo AG",
+    "brandname": "Switel"
   }
 }
