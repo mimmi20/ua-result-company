@@ -6203,5 +6203,15 @@
     "type": "Switel",
     "name": "Telgo AG",
     "brandname": "Switel"
+  },
+  "Gooweel": {
+    "type": "Gooweel",
+    "name": "Gooweel",
+    "brandname": "Gooweel"
+  },
+  "Essential": {
+    "type": "Essential",
+    "name": "Essential",
+    "brandname": "Essential"
   }
 }
