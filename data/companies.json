@@ -6213,5 +6213,10 @@
     "type": "Essential",
     "name": "Essential",
     "brandname": "Essential"
+  },
+  "Nuclear": {
+    "type": "Nuclear",
+    "name": "Nuclear",
+    "brandname": "Nuclear"
   }
 }
