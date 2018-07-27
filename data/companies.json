@@ -6218,5 +6218,15 @@
     "type": "Nuclear",
     "name": "Nuclear",
     "brandname": "Nuclear"
+  },
+  "Numericable": {
+    "type": "Numericable",
+    "name": "Numericable Group, S.A.",
+    "brandname": "Numericable"
+  },
+  "Altice": {
+    "type": "Altice",
+    "name": "Altice N.V.",
+    "brandname": "Altice"
   }
 }
