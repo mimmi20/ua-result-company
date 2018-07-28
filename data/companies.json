@@ -6228,5 +6228,15 @@
     "type": "Altice",
     "name": "Altice N.V.",
     "brandname": "Altice"
+  },
+  "TizzBird": {
+    "type": "TizzBird",
+    "name": "TizzBird",
+    "brandname": "TizzBird"
+  },
+  "Newsman": {
+    "type": "Newsman",
+    "name": "Newsman",
+    "brandname": "Newsman"
   }
 }
