@@ -144,6 +144,11 @@
     "name": "Anka",
     "brandname": "Anka"
   },
+  "Ant": {
+    "type": "Ant",
+    "name": "ANT Software Limited",
+    "brandname": "Ant"
+  },
   "AntCom": {
     "type": "AntCom",
     "name": "Ant.com Ltd",
@@ -6238,5 +6243,35 @@
     "type": "Newsman",
     "name": "Newsman",
     "brandname": "Newsman"
+  },
+  "CTC": {
+    "type": "CTC",
+    "name": "CTC",
+    "brandname": "CTC"
+  },
+  "Casper": {
+    "type": "Casper",
+    "name": "Casper",
+    "brandname": "Casper"
+  },
+  "Noa": {
+    "type": "Noa",
+    "name": "Noa",
+    "brandname": "Noa"
+  },
+  "Unnecto": {
+    "type": "Unnecto",
+    "name": "Unnecto",
+    "brandname": "Unnecto"
+  },
+  "Dialog": {
+    "type": "Dialog",
+    "name": "Dialog",
+    "brandname": "Dialog"
+  },
+  "Gorila": {
+    "type": "Gorila",
+    "name": "Gorila",
+    "brandname": "Gorila"
   }
 }
