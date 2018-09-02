@@ -11,6 +11,7 @@
 declare(strict_types = 1);
 namespace UaResultTest\Company;
 
+use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use UaResult\Company\CompanyLoader;
 
@@ -27,6 +28,9 @@ class CompanyLoaderTest extends TestCase
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
+     *
+     * @throws \Seld\JsonLint\ParsingException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -180,7 +184,7 @@ class CompanyLoaderTest extends TestCase
      */
     public function testLoadNotAvailable(): void
     {
-        $this->expectException('\BrowserDetector\Loader\NotFoundException');
+        $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the company with key "does not exist" was not found');
 
         $this->object->load('does not exist');
@@ -191,7 +195,7 @@ class CompanyLoaderTest extends TestCase
      */
     public function testLoadByBrandNameNotAvailable(): void
     {
-        $this->expectException('\BrowserDetector\Loader\NotFoundException');
+        $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the company with brand name "This company does not exist" was not found');
 
         $this->object->loadByBrandName('This company does not exist');
@@ -202,7 +206,7 @@ class CompanyLoaderTest extends TestCase
      */
     public function testLoadByNameNotAvailable(): void
     {
-        $this->expectException('\BrowserDetector\Loader\NotFoundException');
+        $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the company with name "This company does not exist" was not found');
 
         $this->object->loadByName('This company does not exist');
