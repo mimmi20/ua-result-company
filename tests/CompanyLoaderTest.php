@@ -30,7 +30,7 @@ class CompanyLoaderTest extends TestCase
      * This method is called before a test is executed.
      *
      * @throws \Seld\JsonLint\ParsingException
-     * @throws \UnexpectedValueException
+     * @throws \RuntimeException
      *
      * @return void
      */

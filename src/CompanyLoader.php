@@ -37,7 +37,7 @@ class CompanyLoader implements LoaderInterface
 
     /**
      * @throws \Seld\JsonLint\ParsingException
-     * @throws \UnexpectedValueException
+     * @throws \RuntimeException
      */
     private function __construct()
     {
@@ -46,7 +46,7 @@ class CompanyLoader implements LoaderInterface
 
     /**
      * @throws \Seld\JsonLint\ParsingException
-     * @throws \UnexpectedValueException
+     * @throws \RuntimeException
      *
      * @return self
      */
@@ -147,7 +147,7 @@ class CompanyLoader implements LoaderInterface
      * initializes cache
      *
      * @throws \Seld\JsonLint\ParsingException
-     * @throws \UnexpectedValueException
+     * @throws \RuntimeException
      *
      * @return void
      */
@@ -162,7 +162,7 @@ class CompanyLoader implements LoaderInterface
 
     /**
      * @throws \Seld\JsonLint\ParsingException
-     * @throws \UnexpectedValueException
+     * @throws \RuntimeException
      *
      * @return array[]|\Generator
      */
@@ -172,11 +172,7 @@ class CompanyLoader implements LoaderInterface
 
         if (null === $companies) {
             $jsonParser = new JsonParser();
-            $content    = file_get_contents(__DIR__ . '/../data/companies.json');
-
-            if (false === $content) {
-                throw new \UnexpectedValueException('could not load data file');
-            }
+            $content    = $this->getContents(__DIR__ . '/../data/companies.json');
 
             $companies = $jsonParser->parse(
                 $content,
@@ -187,5 +183,28 @@ class CompanyLoader implements LoaderInterface
         foreach ($companies as $key => $data) {
             yield $key => $data;
         }
+    }
+
+    /**
+     * Returns the contents of the file.
+     *
+     * @param string $path
+     *
+     * @throws \RuntimeException
+     *
+     * @return string the contents of the file
+     */
+    private function getContents(string $path)
+    {
+        set_error_handler(static function ($type, $msg) use (&$error): void {
+            $error = $msg;
+        });
+        $content = file_get_contents($path);
+        restore_error_handler();
+        if (false === $content) {
+            throw new \RuntimeException($error);
+        }
+
+        return $content;
     }
 }
