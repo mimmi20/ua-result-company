@@ -14,7 +14,6 @@ namespace UaResult\Company;
 use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use Seld\JsonLint\JsonParser;
-use Seld\JsonLint\ParsingException;
 
 /**
  * Browser detection class
@@ -37,7 +36,8 @@ class CompanyLoader implements LoaderInterface
     private static $instance;
 
     /**
-     * @throws ParsingException
+     * @throws \Seld\JsonLint\ParsingException
+     * @throws \RuntimeException
      */
     private function __construct()
     {
@@ -45,6 +45,9 @@ class CompanyLoader implements LoaderInterface
     }
 
     /**
+     * @throws \Seld\JsonLint\ParsingException
+     * @throws \RuntimeException
+     *
      * @return self
      */
     public static function getInstance()
@@ -144,6 +147,7 @@ class CompanyLoader implements LoaderInterface
      * initializes cache
      *
      * @throws \Seld\JsonLint\ParsingException
+     * @throws \RuntimeException
      *
      * @return void
      */
@@ -158,8 +162,9 @@ class CompanyLoader implements LoaderInterface
 
     /**
      * @throws \Seld\JsonLint\ParsingException
+     * @throws \RuntimeException
      *
-     * @return \Generator|\stdClass[]
+     * @return array[]|\Generator
      */
     private function getCompanies(): \Generator
     {
@@ -167,8 +172,10 @@ class CompanyLoader implements LoaderInterface
 
         if (null === $companies) {
             $jsonParser = new JsonParser();
-            $companies  = $jsonParser->parse(
-                file_get_contents(__DIR__ . '/../data/companies.json'),
+            $content    = $this->getContents(__DIR__ . '/../data/companies.json');
+
+            $companies = $jsonParser->parse(
+                $content,
                 JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
             );
         }
@@ -176,5 +183,28 @@ class CompanyLoader implements LoaderInterface
         foreach ($companies as $key => $data) {
             yield $key => $data;
         }
+    }
+
+    /**
+     * Returns the contents of the file.
+     *
+     * @param string $path
+     *
+     * @throws \RuntimeException
+     *
+     * @return string the contents of the file
+     */
+    private function getContents(string $path)
+    {
+        set_error_handler(static function ($type, $msg) use (&$error): void {
+            $error = $msg;
+        });
+        $content = file_get_contents($path);
+        restore_error_handler();
+        if (false === $content) {
+            throw new \RuntimeException($error);
+        }
+
+        return $content;
     }
 }
