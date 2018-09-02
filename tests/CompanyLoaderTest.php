@@ -211,4 +211,20 @@ class CompanyLoaderTest extends TestCase
 
         $this->object->loadByName('This company does not exist');
     }
+
+    /**
+     * @throws \ReflectionException
+     *
+     * @return void
+     */
+    public function testGetContents(): void
+    {
+        $class    = new \ReflectionClass($this->object);
+        $function = $class->getMethod('getContents');
+        $function->setAccessible(true);
+
+        $this->expectException(\RuntimeException::class);
+        $this->expectExceptionMessage('file_get_contents(some-not-existing-file.txt): failed to open stream: No such file or directory');
+        $function->invoke($this->object, 'some-not-existing-file.txt');
+    }
 }
