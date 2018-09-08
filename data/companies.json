@@ -6273,5 +6273,25 @@
     "type": "Gorila",
     "name": "Gorila",
     "brandname": "Gorila"
+  },
+  "Nextbit": {
+    "type": "Nextbit",
+    "name": "Nextbit",
+    "brandname": "Nextbit"
+  },
+  "Voyo": {
+    "type": "Voyo",
+    "name": "Voyo",
+    "brandname": "Voyo"
+  },
+  "Hafury": {
+    "type": "Hafury",
+    "name": "Hafury",
+    "brandname": "Hafury"
+  },
+  "Bitel": {
+    "type": "Bitel",
+    "name": "Bitel",
+    "brandname": "Bitel"
   }
 }
