@@ -13,7 +13,7 @@ namespace UaResult\Company;
 
 use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
-use Seld\JsonLint\JsonParser;
+use JsonClass\Json;
 
 /**
  * Browser detection class
@@ -36,7 +36,7 @@ class CompanyLoader implements LoaderInterface
     private static $instance;
 
     /**
-     * @throws \Seld\JsonLint\ParsingException
+     * @throws \ExceptionalJSON\DecodeErrorException when the decode operation fails
      * @throws \RuntimeException
      */
     private function __construct()
@@ -45,7 +45,7 @@ class CompanyLoader implements LoaderInterface
     }
 
     /**
-     * @throws \Seld\JsonLint\ParsingException
+     * @throws \ExceptionalJSON\DecodeErrorException when the decode operation fails
      * @throws \RuntimeException
      *
      * @return self
@@ -146,7 +146,7 @@ class CompanyLoader implements LoaderInterface
     /**
      * initializes cache
      *
-     * @throws \Seld\JsonLint\ParsingException
+     * @throws \ExceptionalJSON\DecodeErrorException when the decode operation fails
      * @throws \RuntimeException
      *
      * @return void
@@ -161,7 +161,7 @@ class CompanyLoader implements LoaderInterface
     }
 
     /**
-     * @throws \Seld\JsonLint\ParsingException
+     * @throws \ExceptionalJSON\DecodeErrorException when the decode operation fails
      * @throws \RuntimeException
      *
      * @return array[]|\Generator
@@ -171,12 +171,12 @@ class CompanyLoader implements LoaderInterface
         static $companies = null;
 
         if (null === $companies) {
-            $jsonParser = new JsonParser();
+            $jsonParser = new Json();
             $content    = $this->getContents(__DIR__ . '/../data/companies.json');
 
-            $companies = $jsonParser->parse(
+            $companies = $jsonParser->decode(
                 $content,
-                JsonParser::DETECT_KEY_CONFLICTS | JsonParser::PARSE_TO_ASSOC
+                true
             );
         }
 
