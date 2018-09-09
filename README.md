@@ -11,7 +11,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/0746a48c36cc825b1d81/maintainability)](https://codeclimate.com/github/mimmi20/ua-result-company/maintainability)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/mimmi20/ua-result-company.svg)](http://isitmaintained.com/project/mimmi20/ua-result-company "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/mimmi20/ua-result-company.svg)](http://isitmaintained.com/project/mimmi20/ua-result-company "Percentage of issues still open")
-[![Dependency Status](https://gemnasium.com/badges/github.com/mimmi20/ua-result-company.svg)](https://gemnasium.com/github.com/mimmi20/ua-result-company)
 
 ## Description
 
