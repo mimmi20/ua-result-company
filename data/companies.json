@@ -6293,5 +6293,20 @@
     "type": "Bitel",
     "name": "Bitel",
     "brandname": "Bitel"
+  },
+  "SuperTab": {
+    "type": "SuperTab",
+    "name": "SuperTab",
+    "brandname": "SuperTab"
+  },
+  "Edal": {
+    "type": "Edal",
+    "name": "Edal",
+    "brandname": "Edal"
+  },
+  "Bomix": {
+    "type": "Bomix",
+    "name": "Bomix",
+    "brandname": "Bomix"
   }
 }
