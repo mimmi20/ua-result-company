@@ -6308,5 +6308,70 @@
     "type": "Bomix",
     "name": "Bomix",
     "brandname": "Bomix"
+  },
+  "Smartron": {
+    "type": "Smartron",
+    "name": "Smartron",
+    "brandname": "Smartron"
+  },
+  "Comio": {
+    "type": "Comio",
+    "name": "Comio",
+    "brandname": "Comio"
+  },
+  "TechPad": {
+    "type": "TechPad",
+    "name": "TechPad",
+    "brandname": "TechPad"
+  },
+  "Akai": {
+    "type": "Akai",
+    "name": "Akai",
+    "brandname": "Akai"
+  },
+  "Unonu": {
+    "type": "Unonu",
+    "name": "Swagtek Inc.",
+    "brandname": "Unonu"
+  },
+  "Zuum": {
+    "type": "Zuum",
+    "name": "Zuum",
+    "brandname": "Zuum"
+  },
+  "Dorada": {
+    "type": "Dorada",
+    "name": "Dorada App Software Ltd",
+    "brandname": "Dorada"
+  },
+  "DPS": {
+    "type": "DPS",
+    "name": "DPS",
+    "brandname": "DPS"
+  },
+  "Newman": {
+    "type": "Newman",
+    "name": "Newman",
+    "brandname": "Newman"
+  },
+  "Kurio": {
+    "type": "Kurio",
+    "name": "Kurio",
+    "brandname": "Kurio"
+  },
+  "Moonar": {
+    "type": "Moonar",
+    "name": "Moonar",
+    "brandname": "Moonar"
+  },
+  "Esperanza": {
+    "type": "Esperanza",
+    "name": "Esperanza",
+    "brandname": "Esperanza"
+  },
+  "Convexa": {
+    "type": "Convexa",
+    "name": "Convexa",
+    "brandname": "Convexa"
   }
 }
