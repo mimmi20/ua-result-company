@@ -1231,7 +1231,7 @@
   },
   "Hp": {
     "type": "Hp",
-    "name": "HP",
+    "name": "HP Inc.",
     "brandname": "HP"
   },
   "Htc": {
@@ -6373,5 +6373,70 @@
     "type": "Convexa",
     "name": "Convexa",
     "brandname": "Convexa"
+  },
+  "Cobalt": {
+    "type": "Cobalt",
+    "name": "Cobalt",
+    "brandname": "Cobalt"
+  },
+  "Citrix": {
+    "type": "Citrix",
+    "name": "Citrix",
+    "brandname": "Citrix"
+  },
+  "Miray": {
+    "type": "Miray",
+    "name": "Miray",
+    "brandname": "Miray"
+  },
+  "Geometry": {
+    "type": "Geometry",
+    "name": "Geometry OU",
+    "brandname": "Geometry"
+  },
+  "Refind": {
+    "type": "Refind",
+    "name": "Refind Inc.",
+    "brandname": "Refind"
+  },
+  "Runbo": {
+    "type": "Runbo",
+    "name": "Runbo",
+    "brandname": "Runbo"
+  },
+  "FNB": {
+    "type": "FNB",
+    "name": "First National Bank",
+    "brandname": "FNB"
+  },
+  "Rakuten": {
+    "type": "Rakuten",
+    "name": "Rakuten",
+    "brandname": "Rakuten"
+  },
+  "Todd Ditchendorf": {
+    "type": "Todd Ditchendorf",
+    "name": "Todd Ditchendorf",
+    "brandname": "Todd Ditchendorf"
+  },
+  "China Tablet": {
+    "type": "China Tablet",
+    "name": "China Tablet",
+    "brandname": "China Tablet"
+  },
+  "Compass": {
+    "type": "Compass",
+    "name": "Compass Security AG",
+    "brandname": "Compass"
+  },
+  "Swipe": {
+    "type": "Swipe",
+    "name": "Swipe",
+    "brandname": "Swipe"
+  },
+  "ShopKeep": {
+    "type": "ShopKeep",
+    "name": "ShopKeep Inc.",
+    "brandname": "ShopKeep"
   }
 }
