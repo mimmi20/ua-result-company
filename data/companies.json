@@ -6438,5 +6438,30 @@
     "type": "ShopKeep",
     "name": "ShopKeep Inc.",
     "brandname": "ShopKeep"
+  },
+  "Kata": {
+    "type": "Kata",
+    "name": "Kata",
+    "brandname": "Kata"
+  },
+  "Mobiola": {
+    "type": "Mobiola",
+    "name": "Mobiola",
+    "brandname": "Mobiola"
+  },
+  "Lemhoov": {
+    "type": "Lemhoov",
+    "name": "Lemhoov",
+    "brandname": "Lemhoov"
+  },
+  "Primepad": {
+    "type": "Primepad",
+    "name": "Primepad",
+    "brandname": "Primepad"
+  },
+  "Touchmate": {
+    "type": "Touchmate",
+    "name": "Touchmate",
+    "brandname": "Touchmate"
   }
 }
