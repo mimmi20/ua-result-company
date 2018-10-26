@@ -6463,5 +6463,10 @@
     "type": "Touchmate",
     "name": "Touchmate",
     "brandname": "Touchmate"
+  },
+  "Mobicip": {
+    "type": "Mobicip",
+    "name": "Mobicip",
+    "brandname": "Mobicip"
   }
 }
