@@ -3006,7 +3006,7 @@
   },
   "Tcl": {
     "type": "Tcl",
-    "name": "TCL",
+    "name": "TCL Communication Ltd.",
     "brandname": "TCL"
   },
   "TeamHaxx": {
@@ -6468,5 +6468,10 @@
     "type": "Mobicip",
     "name": "Mobicip",
     "brandname": "Mobicip"
+  },
+  "Optiemus": {
+    "type": "Optiemus",
+    "name": "Optiemus Electronics Ltd.",
+    "brandname": "Optiemus"
   }
 }
