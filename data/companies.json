@@ -6473,5 +6473,45 @@
     "type": "Optiemus",
     "name": "Optiemus Electronics Ltd.",
     "brandname": "Optiemus"
+  },
+  "Kempler and Strauss": {
+    "type": "Kempler and Strauss",
+    "name": "Kempler and Strauss",
+    "brandname": "Kempler and Strauss"
+  },
+  "GoMobile": {
+    "type": "GoMobile",
+    "name": "GoMobile",
+    "brandname": "GoMobile"
+  },
+  "Wieppo": {
+    "type": "Wieppo",
+    "name": "Wieppo",
+    "brandname": "Wieppo"
+  },
+  "Myria": {
+    "type": "Myria",
+    "name": "Myria",
+    "brandname": "Myria"
+  },
+  "Top House": {
+    "type": "Top House",
+    "name": "Top House",
+    "brandname": "Top House"
+  },
+  "Grape": {
+    "type": "Grape",
+    "name": "Grape",
+    "brandname": "Grape"
+  },
+  "Auris Mobile": {
+    "type": "Auris Mobile",
+    "name": "Auris Mobile",
+    "brandname": "Auris Mobile"
+  },
+  "MTS": {
+    "type": "MTS",
+    "name": "MTS",
+    "brandname": "MTS"
   }
 }
