@@ -6513,5 +6513,60 @@
     "type": "MTS",
     "name": "MTS",
     "brandname": "MTS"
+  },
+  "Modoex": {
+    "type": "Modoex",
+    "name": "Modoex",
+    "brandname": "Modoex"
+  },
+  "BBK": {
+    "type": "BBK",
+    "name": "BBK Electronics",
+    "brandname": "BBK"
+  },
+  "Yifang": {
+    "type": "Yifang",
+    "name": "Yifang",
+    "brandname": "Yifang"
+  },
+  "Azumi": {
+    "type": "Azumi",
+    "name": "Azumi",
+    "brandname": "Azumi"
+  },
+  "Winmax": {
+    "type": "Winmax",
+    "name": "Winmax",
+    "brandname": "Winmax"
+  },
+  "Elebest Germany": {
+    "type": "Elebest Germany",
+    "name": "Elebest Germany",
+    "brandname": "Elebest Germany"
+  },
+  "Ouku": {
+    "type": "Ouku",
+    "name": "Ouku",
+    "brandname": "Ouku"
+  },
+  "Land Rover": {
+    "type": "Land Rover",
+    "name": "Land Rover",
+    "brandname": "Land Rover"
+  },
+  "Gramvis Lab": {
+    "type": "Gramvis Lab",
+    "name": "Gramvis Lab",
+    "brandname": "Gramvis Lab"
+  },
+  "carlrogers": {
+    "type": "carlrogers",
+    "name": "carlrogers",
+    "brandname": "carlrogers"
+  },
+  "DTAC": {
+    "type": "DTAC",
+    "name": "DTAC",
+    "brandname": "DTAC"
   }
 }
